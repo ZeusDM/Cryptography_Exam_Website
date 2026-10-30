@@ -13,7 +13,7 @@
   {{ range .Params.problems }}
     {{ $p := dict
         "id" .id
-        "url" (printf "/problems/%s/" .slug)
+        "url" (printf "problems/%s/" .slug | relURL)
         "title" .title
         "topic" .topic
         "topic_slug" .topic_slug

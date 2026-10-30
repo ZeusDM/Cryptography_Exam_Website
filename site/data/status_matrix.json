@@ -18,8 +18,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-1/",
-          "canonical_url": "/problems/2025-1/"
+          "url": "problems/2025-1/",
+          "canonical_url": "problems/2025-1/"
         },
         {
           "problem": 2,
@@ -34,8 +34,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-2/",
-          "canonical_url": "/problems/2025-2/"
+          "url": "problems/2025-2/",
+          "canonical_url": "problems/2025-2/"
         },
         {
           "problem": 3,
@@ -50,8 +50,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-3/",
-          "canonical_url": "/problems/2025-3/"
+          "url": "problems/2025-3/",
+          "canonical_url": "problems/2025-3/"
         },
         {
           "problem": 4,
@@ -66,8 +66,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-4/",
-          "canonical_url": "/problems/composite-fdh-rsa/"
+          "url": "problems/2025-4/",
+          "canonical_url": "problems/composite-fdh-rsa/"
         },
         {
           "problem": 5,
@@ -82,8 +82,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-5/",
-          "canonical_url": "/problems/2025-5/"
+          "url": "problems/2025-5/",
+          "canonical_url": "problems/2025-5/"
         },
         {
           "problem": 6,
@@ -98,8 +98,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-6/",
-          "canonical_url": "/problems/composite-elliptic-cubing/"
+          "url": "problems/2025-6/",
+          "canonical_url": "problems/composite-elliptic-cubing/"
         },
         {
           "problem": 7,
@@ -114,8 +114,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2025-7/",
-          "canonical_url": "/problems/2025-7/"
+          "url": "problems/2025-7/",
+          "canonical_url": "problems/2025-7/"
         },
         null
       ]
@@ -137,8 +137,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-1/",
-          "canonical_url": "/problems/2020-1/"
+          "url": "problems/2020-1/",
+          "canonical_url": "problems/2020-1/"
         },
         {
           "problem": 2,
@@ -153,8 +153,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-2/",
-          "canonical_url": "/problems/2020-2/"
+          "url": "problems/2020-2/",
+          "canonical_url": "problems/2020-2/"
         },
         {
           "problem": 3,
@@ -171,14 +171,14 @@
           "variant_solutions": [
             {
               "id": "2025/3",
-              "url": "/problems/2025-3/",
+              "url": "problems/2025-3/",
               "title": "Primality testing",
               "status": "complete",
               "author": "Zeus"
             }
           ],
-          "url": "/problems/2020-3/",
-          "canonical_url": "/problems/2025-3/"
+          "url": "problems/2020-3/",
+          "canonical_url": "problems/2025-3/"
         },
         {
           "problem": 4,
@@ -193,8 +193,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-4/",
-          "canonical_url": "/problems/2020-4/"
+          "url": "problems/2020-4/",
+          "canonical_url": "problems/2020-4/"
         },
         {
           "problem": 5,
@@ -209,8 +209,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-5/",
-          "canonical_url": "/problems/composite-diffie-hellman-reductions/"
+          "url": "problems/2020-5/",
+          "canonical_url": "problems/composite-diffie-hellman-reductions/"
         },
         {
           "problem": 6,
@@ -225,8 +225,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-6/",
-          "canonical_url": "/problems/2020-6/"
+          "url": "problems/2020-6/",
+          "canonical_url": "problems/2020-6/"
         },
         {
           "problem": 7,
@@ -241,8 +241,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2020-7/",
-          "canonical_url": "/problems/2020-7/"
+          "url": "problems/2020-7/",
+          "canonical_url": "problems/2020-7/"
         },
         null
       ]
@@ -264,8 +264,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-1/",
-          "canonical_url": "/problems/2019-1/"
+          "url": "problems/2019-1/",
+          "canonical_url": "problems/2019-1/"
         },
         {
           "problem": 2,
@@ -280,8 +280,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-2/",
-          "canonical_url": "/problems/2019-2/"
+          "url": "problems/2019-2/",
+          "canonical_url": "problems/2019-2/"
         },
         {
           "problem": 3,
@@ -296,8 +296,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-3/",
-          "canonical_url": "/problems/composite-key-whitening/"
+          "url": "problems/2019-3/",
+          "canonical_url": "problems/composite-key-whitening/"
         },
         {
           "problem": 4,
@@ -312,8 +312,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-4/",
-          "canonical_url": "/problems/2019-4/"
+          "url": "problems/2019-4/",
+          "canonical_url": "problems/2019-4/"
         },
         {
           "problem": 5,
@@ -328,8 +328,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-5/",
-          "canonical_url": "/problems/composite-elliptic-point-counting/"
+          "url": "problems/2019-5/",
+          "canonical_url": "problems/composite-elliptic-point-counting/"
         },
         {
           "problem": 6,
@@ -344,8 +344,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2019-6/",
-          "canonical_url": "/problems/2019-6/"
+          "url": "problems/2019-6/",
+          "canonical_url": "problems/2019-6/"
         },
         null,
         null
@@ -368,8 +368,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-1/",
-          "canonical_url": "/problems/2018-1/"
+          "url": "problems/2018-1/",
+          "canonical_url": "problems/2018-1/"
         },
         {
           "problem": 2,
@@ -384,8 +384,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-2/",
-          "canonical_url": "/problems/2018-2/"
+          "url": "problems/2018-2/",
+          "canonical_url": "problems/2018-2/"
         },
         {
           "problem": 3,
@@ -400,8 +400,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-3/",
-          "canonical_url": "/problems/2018-3/"
+          "url": "problems/2018-3/",
+          "canonical_url": "problems/2018-3/"
         },
         {
           "problem": 4,
@@ -416,8 +416,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-4/",
-          "canonical_url": "/problems/2018-4/"
+          "url": "problems/2018-4/",
+          "canonical_url": "problems/2018-4/"
         },
         {
           "problem": 5,
@@ -432,8 +432,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-5/",
-          "canonical_url": "/problems/2018-5/"
+          "url": "problems/2018-5/",
+          "canonical_url": "problems/2018-5/"
         },
         {
           "problem": 6,
@@ -448,8 +448,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-6/",
-          "canonical_url": "/problems/composite-elliptic-cubing/"
+          "url": "problems/2018-6/",
+          "canonical_url": "problems/composite-elliptic-cubing/"
         },
         {
           "problem": 7,
@@ -464,8 +464,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2018-7/",
-          "canonical_url": "/problems/2018-7/"
+          "url": "problems/2018-7/",
+          "canonical_url": "problems/2018-7/"
         },
         null
       ]
@@ -487,8 +487,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-1/",
-          "canonical_url": "/problems/composite-key-whitening/"
+          "url": "problems/2017-1/",
+          "canonical_url": "problems/composite-key-whitening/"
         },
         {
           "problem": 2,
@@ -503,8 +503,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-2/",
-          "canonical_url": "/problems/2017-2/"
+          "url": "problems/2017-2/",
+          "canonical_url": "problems/2017-2/"
         },
         {
           "problem": 3,
@@ -519,8 +519,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-3/",
-          "canonical_url": "/problems/2017-3/"
+          "url": "problems/2017-3/",
+          "canonical_url": "problems/2017-3/"
         },
         {
           "problem": 4,
@@ -535,8 +535,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-4/",
-          "canonical_url": "/problems/2020-4/"
+          "url": "problems/2017-4/",
+          "canonical_url": "problems/2020-4/"
         },
         {
           "problem": 5,
@@ -551,8 +551,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-5/",
-          "canonical_url": "/problems/composite-fdh-rsa/"
+          "url": "problems/2017-5/",
+          "canonical_url": "problems/composite-fdh-rsa/"
         },
         {
           "problem": 6,
@@ -567,8 +567,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-6/",
-          "canonical_url": "/problems/composite-diffie-hellman-reductions/"
+          "url": "problems/2017-6/",
+          "canonical_url": "problems/composite-diffie-hellman-reductions/"
         },
         {
           "problem": 7,
@@ -583,8 +583,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2017-7/",
-          "canonical_url": "/problems/composite-elliptic-point-counting/"
+          "url": "problems/2017-7/",
+          "canonical_url": "problems/composite-elliptic-point-counting/"
         },
         null
       ]
@@ -606,8 +606,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-1/",
-          "canonical_url": "/problems/2016-1/"
+          "url": "problems/2016-1/",
+          "canonical_url": "problems/2016-1/"
         },
         {
           "problem": 2,
@@ -624,14 +624,14 @@
           "variant_solutions": [
             {
               "id": "composite/fermat-primes",
-              "url": "/problems/composite-fermat-primes/",
+              "url": "problems/composite-fermat-primes/",
               "title": "Fermat primes and generators",
               "status": "complete",
               "author": "Zeus"
             }
           ],
-          "url": "/problems/2016-2/",
-          "canonical_url": "/problems/composite-fermat-primes/"
+          "url": "problems/2016-2/",
+          "canonical_url": "problems/composite-fermat-primes/"
         },
         {
           "problem": 3,
@@ -646,8 +646,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-3/",
-          "canonical_url": "/problems/2016-3/"
+          "url": "problems/2016-3/",
+          "canonical_url": "problems/2016-3/"
         },
         {
           "problem": 4,
@@ -662,8 +662,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-4/",
-          "canonical_url": "/problems/2016-4/"
+          "url": "problems/2016-4/",
+          "canonical_url": "problems/2016-4/"
         },
         {
           "problem": 5,
@@ -678,8 +678,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-5/",
-          "canonical_url": "/problems/2016-5/"
+          "url": "problems/2016-5/",
+          "canonical_url": "problems/2016-5/"
         },
         {
           "problem": 6,
@@ -694,8 +694,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-6/",
-          "canonical_url": "/problems/2016-6/"
+          "url": "problems/2016-6/",
+          "canonical_url": "problems/2016-6/"
         },
         {
           "problem": 7,
@@ -710,8 +710,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-7/",
-          "canonical_url": "/problems/2016-7/"
+          "url": "problems/2016-7/",
+          "canonical_url": "problems/2016-7/"
         },
         {
           "problem": 8,
@@ -726,8 +726,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2016-8/",
-          "canonical_url": "/problems/2016-8/"
+          "url": "problems/2016-8/",
+          "canonical_url": "problems/2016-8/"
         }
       ]
     },
@@ -748,8 +748,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-1/",
-          "canonical_url": "/problems/2013-1/"
+          "url": "problems/2013-1/",
+          "canonical_url": "problems/2013-1/"
         },
         {
           "problem": 2,
@@ -764,8 +764,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-2/",
-          "canonical_url": "/problems/2013-2/"
+          "url": "problems/2013-2/",
+          "canonical_url": "problems/2013-2/"
         },
         {
           "problem": 3,
@@ -780,8 +780,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-3/",
-          "canonical_url": "/problems/2013-3/"
+          "url": "problems/2013-3/",
+          "canonical_url": "problems/2013-3/"
         },
         {
           "problem": 4,
@@ -796,8 +796,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-4/",
-          "canonical_url": "/problems/2013-4/"
+          "url": "problems/2013-4/",
+          "canonical_url": "problems/2013-4/"
         },
         {
           "problem": 5,
@@ -812,8 +812,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-5/",
-          "canonical_url": "/problems/2013-5/"
+          "url": "problems/2013-5/",
+          "canonical_url": "problems/2013-5/"
         },
         {
           "problem": 6,
@@ -828,8 +828,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2013-6/",
-          "canonical_url": "/problems/composite-elliptic-cubing/"
+          "url": "problems/2013-6/",
+          "canonical_url": "problems/composite-elliptic-cubing/"
         },
         null,
         null
@@ -852,8 +852,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-1/",
-          "canonical_url": "/problems/2011-1/"
+          "url": "problems/2011-1/",
+          "canonical_url": "problems/2011-1/"
         },
         {
           "problem": 2,
@@ -868,8 +868,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-2/",
-          "canonical_url": "/problems/2011-2/"
+          "url": "problems/2011-2/",
+          "canonical_url": "problems/2011-2/"
         },
         {
           "problem": 3,
@@ -884,8 +884,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-3/",
-          "canonical_url": "/problems/2011-3/"
+          "url": "problems/2011-3/",
+          "canonical_url": "problems/2011-3/"
         },
         {
           "problem": 4,
@@ -900,8 +900,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-4/",
-          "canonical_url": "/problems/2011-4/"
+          "url": "problems/2011-4/",
+          "canonical_url": "problems/2011-4/"
         },
         {
           "problem": 5,
@@ -916,8 +916,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-5/",
-          "canonical_url": "/problems/2011-5/"
+          "url": "problems/2011-5/",
+          "canonical_url": "problems/2011-5/"
         },
         {
           "problem": 6,
@@ -932,8 +932,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2011-6/",
-          "canonical_url": "/problems/2011-6/"
+          "url": "problems/2011-6/",
+          "canonical_url": "problems/2011-6/"
         },
         null,
         null
@@ -956,8 +956,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-1/",
-          "canonical_url": "/problems/2007-1/"
+          "url": "problems/2007-1/",
+          "canonical_url": "problems/2007-1/"
         },
         {
           "problem": 2,
@@ -972,8 +972,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-2/",
-          "canonical_url": "/problems/2007-2/"
+          "url": "problems/2007-2/",
+          "canonical_url": "problems/2007-2/"
         },
         {
           "problem": 3,
@@ -988,8 +988,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-3/",
-          "canonical_url": "/problems/2016-5/"
+          "url": "problems/2007-3/",
+          "canonical_url": "problems/2016-5/"
         },
         {
           "problem": 4,
@@ -1004,8 +1004,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-4/",
-          "canonical_url": "/problems/2007-4/"
+          "url": "problems/2007-4/",
+          "canonical_url": "problems/2007-4/"
         },
         {
           "problem": 5,
@@ -1020,8 +1020,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-5/",
-          "canonical_url": "/problems/2007-5/"
+          "url": "problems/2007-5/",
+          "canonical_url": "problems/2007-5/"
         },
         {
           "problem": 6,
@@ -1036,8 +1036,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2007-6/",
-          "canonical_url": "/problems/2007-6/"
+          "url": "problems/2007-6/",
+          "canonical_url": "problems/2007-6/"
         },
         null,
         null
@@ -1060,8 +1060,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-1/",
-          "canonical_url": "/problems/2004-1/"
+          "url": "problems/2004-1/",
+          "canonical_url": "problems/2004-1/"
         },
         {
           "problem": 2,
@@ -1076,8 +1076,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-2/",
-          "canonical_url": "/problems/2004-2/"
+          "url": "problems/2004-2/",
+          "canonical_url": "problems/2004-2/"
         },
         {
           "problem": 3,
@@ -1092,8 +1092,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-3/",
-          "canonical_url": "/problems/2004-3/"
+          "url": "problems/2004-3/",
+          "canonical_url": "problems/2004-3/"
         },
         {
           "problem": 4,
@@ -1108,8 +1108,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-4/",
-          "canonical_url": "/problems/2004-4/"
+          "url": "problems/2004-4/",
+          "canonical_url": "problems/2004-4/"
         },
         {
           "problem": 5,
@@ -1124,8 +1124,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-5/",
-          "canonical_url": "/problems/composite-fdh-rsa/"
+          "url": "problems/2004-5/",
+          "canonical_url": "problems/composite-fdh-rsa/"
         },
         {
           "problem": 6,
@@ -1140,8 +1140,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2004-6/",
-          "canonical_url": "/problems/2004-6/"
+          "url": "problems/2004-6/",
+          "canonical_url": "problems/2004-6/"
         },
         null,
         null
@@ -1164,8 +1164,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2003-1/",
-          "canonical_url": "/problems/2003-1/"
+          "url": "problems/2003-1/",
+          "canonical_url": "problems/2003-1/"
         },
         {
           "problem": 2,
@@ -1182,14 +1182,14 @@
           "variant_solutions": [
             {
               "id": "composite/fermat-primes",
-              "url": "/problems/composite-fermat-primes/",
+              "url": "problems/composite-fermat-primes/",
               "title": "Fermat primes and generators",
               "status": "complete",
               "author": "Zeus"
             }
           ],
-          "url": "/problems/2003-2/",
-          "canonical_url": "/problems/composite-fermat-primes/"
+          "url": "problems/2003-2/",
+          "canonical_url": "problems/composite-fermat-primes/"
         },
         {
           "problem": 3,
@@ -1204,8 +1204,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2003-3/",
-          "canonical_url": "/problems/2003-3/"
+          "url": "problems/2003-3/",
+          "canonical_url": "problems/2003-3/"
         },
         {
           "problem": 4,
@@ -1220,8 +1220,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2003-4/",
-          "canonical_url": "/problems/2003-4/"
+          "url": "problems/2003-4/",
+          "canonical_url": "problems/2003-4/"
         },
         {
           "problem": 5,
@@ -1236,8 +1236,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2003-5/",
-          "canonical_url": "/problems/2007-4/"
+          "url": "problems/2003-5/",
+          "canonical_url": "problems/2007-4/"
         },
         {
           "problem": 6,
@@ -1252,8 +1252,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2003-6/",
-          "canonical_url": "/problems/composite-elliptic-cubing/"
+          "url": "problems/2003-6/",
+          "canonical_url": "problems/composite-elliptic-cubing/"
         },
         null,
         null
@@ -1276,8 +1276,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-1/",
-          "canonical_url": "/problems/2002-1/"
+          "url": "problems/2002-1/",
+          "canonical_url": "problems/2002-1/"
         },
         {
           "problem": 2,
@@ -1292,8 +1292,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-2/",
-          "canonical_url": "/problems/2002-2/"
+          "url": "problems/2002-2/",
+          "canonical_url": "problems/2002-2/"
         },
         {
           "problem": 3,
@@ -1308,8 +1308,8 @@
           "has_own_solution": true,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-3/",
-          "canonical_url": "/problems/2002-3/"
+          "url": "problems/2002-3/",
+          "canonical_url": "problems/2002-3/"
         },
         {
           "problem": 4,
@@ -1324,8 +1324,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-4/",
-          "canonical_url": "/problems/2002-4/"
+          "url": "problems/2002-4/",
+          "canonical_url": "problems/2002-4/"
         },
         {
           "problem": 5,
@@ -1340,8 +1340,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-5/",
-          "canonical_url": "/problems/2002-5/"
+          "url": "problems/2002-5/",
+          "canonical_url": "problems/2002-5/"
         },
         {
           "problem": 6,
@@ -1356,8 +1356,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-6/",
-          "canonical_url": "/problems/2002-6/"
+          "url": "problems/2002-6/",
+          "canonical_url": "problems/2002-6/"
         },
         {
           "problem": 7,
@@ -1372,8 +1372,8 @@
           "has_own_solution": false,
           "has_variant_solution": false,
           "variant_solutions": [],
-          "url": "/problems/2002-7/",
-          "canonical_url": "/problems/2002-7/"
+          "url": "problems/2002-7/",
+          "canonical_url": "problems/2002-7/"
         },
         null
       ]

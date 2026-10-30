@@ -12,7 +12,7 @@
       "id": "composite/fdh-rsa",
       "title": "RSA signatures",
       "canonical_id": "composite/fdh-rsa",
-      "canonical_url": "/problems/composite-fdh-rsa/",
+      "canonical_url": "problems/composite-fdh-rsa/",
       "appearances": [
         "2025/4",
         "2017/5",
@@ -21,15 +21,15 @@
       "appearance_links": [
         {
           "text": "2025/4",
-          "url": "/problems/2025-4/"
+          "url": "problems/2025-4/"
         },
         {
           "text": "2017/5",
-          "url": "/problems/2017-5/"
+          "url": "problems/2017-5/"
         },
         {
           "text": "2004/5",
-          "url": "/problems/2004-5/"
+          "url": "problems/2004-5/"
         }
       ],
       "status": "none",
@@ -49,14 +49,14 @@
       "id": "2020/7",
       "title": "Signature schemes",
       "canonical_id": "2020/7",
-      "canonical_url": "/problems/2020-7/",
+      "canonical_url": "problems/2020-7/",
       "appearances": [
         "2020/7"
       ],
       "appearance_links": [
         {
           "text": "2020/7",
-          "url": "/problems/2020-7/"
+          "url": "problems/2020-7/"
         }
       ],
       "status": "none",
@@ -76,14 +76,14 @@
       "id": "2018/7",
       "title": "ECDSA",
       "canonical_id": "2018/7",
-      "canonical_url": "/problems/2018-7/",
+      "canonical_url": "problems/2018-7/",
       "appearances": [
         "2018/7"
       ],
       "appearance_links": [
         {
           "text": "2018/7",
-          "url": "/problems/2018-7/"
+          "url": "problems/2018-7/"
         }
       ],
       "status": "none",
@@ -103,14 +103,14 @@
       "id": "2016/7",
       "title": "Identification schemes",
       "canonical_id": "2016/7",
-      "canonical_url": "/problems/2016-7/",
+      "canonical_url": "problems/2016-7/",
       "appearances": [
         "2016/7"
       ],
       "appearance_links": [
         {
           "text": "2016/7",
-          "url": "/problems/2016-7/"
+          "url": "problems/2016-7/"
         }
       ],
       "status": "none",
@@ -130,14 +130,14 @@
       "id": "2004/4",
       "title": "Fault analysis attack on the RSA signature scheme",
       "canonical_id": "2004/4",
-      "canonical_url": "/problems/2004-4/",
+      "canonical_url": "problems/2004-4/",
       "appearances": [
         "2004/4"
       ],
       "appearance_links": [
         {
           "text": "2004/4",
-          "url": "/problems/2004-4/"
+          "url": "problems/2004-4/"
         }
       ],
       "status": "none",
@@ -157,14 +157,14 @@
       "id": "2002/6",
       "title": "Hash functions and DSA",
       "canonical_id": "2002/6",
-      "canonical_url": "/problems/2002-6/",
+      "canonical_url": "problems/2002-6/",
       "appearances": [
         "2002/6"
       ],
       "appearance_links": [
         {
           "text": "2002/6",
-          "url": "/problems/2002-6/"
+          "url": "problems/2002-6/"
         }
       ],
       "status": "none",
@@ -184,14 +184,14 @@
       "id": "2002/7",
       "title": "Duplicate signatures",
       "canonical_id": "2002/7",
-      "canonical_url": "/problems/2002-7/",
+      "canonical_url": "problems/2002-7/",
       "appearances": [
         "2002/7"
       ],
       "appearance_links": [
         {
           "text": "2002/7",
-          "url": "/problems/2002-7/"
+          "url": "problems/2002-7/"
         }
       ],
       "status": "none",

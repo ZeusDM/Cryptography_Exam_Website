@@ -27,11 +27,11 @@
           <span class="problem-id-tag">
             {{- range $idx, $app := $p.appearance_links -}}
               {{- if gt $idx 0 }}, {{ end -}}
-              <a href="{{ $app.url }}">{{ $app.text }}</a>
+              <a href="{{ $app.url | relURL }}">{{ $app.text }}</a>
             {{- end -}}
           </span>
         {{- else -}}
-          <span class="problem-id-tag"><a href="{{ $p.url }}">{{ $p.id }}</a></span>
+          <span class="problem-id-tag"><a href="{{ $p.url | relURL }}">{{ $p.id }}</a></span>
         {{- end -}}
         {{- if $p.title -}}
           <span class="problem-title-text">: {{ $p.title }}</span>
@@ -39,7 +39,7 @@
       </span>
       {{- if not $p.is_topic_view -}}
         {{- if $p.topic -}}
-          <a href="{{ printf "topics/%s/" .topic_slug | relURL }}" class="badge topic-badge">{{ .topic }}</a>
+          <a href="{{ printf "topics/%s/" $p.topic_slug | relURL }}" class="badge topic-badge">{{ $p.topic }}</a>
         {{- end -}}
       {{- end -}}
     </div>
@@ -73,7 +73,7 @@
   {{ if and (not $isExamMode) (not $p.is_topic_view) }}
     {{ if and $p.appearances (gt (len $p.appearances) 1) }}
       <div class="cluster-notice">
-        <span>Appeared in exams: {{ if $p.appearance_links }}{{ range $idx, $app := $p.appearance_links }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $app.url }}">{{ $app.text }}</a></strong>{{ end }}{{ else }}<strong>{{ delimit $p.appearances ", " }}</strong>{{ end }}</span>
+        <span>Appeared in exams: {{ if $p.appearance_links }}{{ range $idx, $app := $p.appearance_links }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $app.url | relURL }}">{{ $app.text }}</a></strong>{{ end }}{{ else }}<strong>{{ delimit $p.appearances ", " }}</strong>{{ end }}</span>
       </div>
     {{ end }}
   {{ end }}
@@ -134,10 +134,10 @@
           </summary>
           <div class="solution-content">
             <div class="solution-empty-prompt">
-              <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url }}">{{ $v.id }}</a></strong>{{ end }}.</span>
+              <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url | relURL }}">{{ $v.id }}</a></strong>{{ end }}.</span>
               <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
                 {{ range $p.variant_solutions }}
-                  <a href="{{ .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
+                  <a href="{{ printf "%s" .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
                 {{ end }}
               </div>
             </div>
@@ -145,10 +145,10 @@
         </details>
       {{ else }}
         <div class="solution-empty-prompt">
-          <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url }}" style="color:var(--primary); text-decoration:underline;">{{ $v.id }}</a></strong>{{ end }}.</span>
+          <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url | relURL }}" style="color:var(--primary); text-decoration:underline;">{{ $v.id }}</a></strong>{{ end }}.</span>
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
             {{ range $p.variant_solutions }}
-              <a href="{{ .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
+              <a href="{{ printf "%s" .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
             {{ end }}
           </div>
         </div>

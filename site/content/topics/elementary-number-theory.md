@@ -12,7 +12,7 @@
       "id": "2025/3",
       "title": "Primality testing",
       "canonical_id": "2025/3",
-      "canonical_url": "/problems/2025-3/",
+      "canonical_url": "problems/2025-3/",
       "appearances": [
         "2025/3",
         "2020/3"
@@ -20,11 +20,11 @@
       "appearance_links": [
         {
           "text": "2025/3",
-          "url": "/problems/2025-3/"
+          "url": "problems/2025-3/"
         },
         {
           "text": "2020/3",
-          "url": "/problems/2020-3/"
+          "url": "problems/2020-3/"
         }
       ],
       "status": "complete",
@@ -44,14 +44,14 @@
       "id": "2019/1",
       "title": "Elementary number theory",
       "canonical_id": "2019/1",
-      "canonical_url": "/problems/2019-1/",
+      "canonical_url": "problems/2019-1/",
       "appearances": [
         "2019/1"
       ],
       "appearance_links": [
         {
           "text": "2019/1",
-          "url": "/problems/2019-1/"
+          "url": "problems/2019-1/"
         }
       ],
       "status": "complete",
@@ -71,14 +71,14 @@
       "id": "2018/3",
       "title": "Elementary number theory",
       "canonical_id": "2018/3",
-      "canonical_url": "/problems/2018-3/",
+      "canonical_url": "problems/2018-3/",
       "appearances": [
         "2018/3"
       ],
       "appearance_links": [
         {
           "text": "2018/3",
-          "url": "/problems/2018-3/"
+          "url": "problems/2018-3/"
         }
       ],
       "status": "complete",
@@ -98,14 +98,14 @@
       "id": "2018/4",
       "title": "Number-theoretic algorithms",
       "canonical_id": "2018/4",
-      "canonical_url": "/problems/2018-4/",
+      "canonical_url": "problems/2018-4/",
       "appearances": [
         "2018/4"
       ],
       "appearance_links": [
         {
           "text": "2018/4",
-          "url": "/problems/2018-4/"
+          "url": "problems/2018-4/"
         }
       ],
       "status": "none",
@@ -125,14 +125,14 @@
       "id": "2017/3",
       "title": "Elementary number theory",
       "canonical_id": "2017/3",
-      "canonical_url": "/problems/2017-3/",
+      "canonical_url": "problems/2017-3/",
       "appearances": [
         "2017/3"
       ],
       "appearance_links": [
         {
           "text": "2017/3",
-          "url": "/problems/2017-3/"
+          "url": "problems/2017-3/"
         }
       ],
       "status": "complete",
@@ -152,7 +152,7 @@
       "id": "composite/fermat-primes",
       "title": "Fermat primes and generators",
       "canonical_id": "composite/fermat-primes",
-      "canonical_url": "/problems/composite-fermat-primes/",
+      "canonical_url": "problems/composite-fermat-primes/",
       "appearances": [
         "2016/2",
         "2003/2"
@@ -160,11 +160,11 @@
       "appearance_links": [
         {
           "text": "2016/2",
-          "url": "/problems/2016-2/"
+          "url": "problems/2016-2/"
         },
         {
           "text": "2003/2",
-          "url": "/problems/2003-2/"
+          "url": "problems/2003-2/"
         }
       ],
       "status": "complete",
@@ -184,14 +184,14 @@
       "id": "2016/3",
       "title": "Elementary number theory",
       "canonical_id": "2016/3",
-      "canonical_url": "/problems/2016-3/",
+      "canonical_url": "problems/2016-3/",
       "appearances": [
         "2016/3"
       ],
       "appearance_links": [
         {
           "text": "2016/3",
-          "url": "/problems/2016-3/"
+          "url": "problems/2016-3/"
         }
       ],
       "status": "complete",
@@ -211,14 +211,14 @@
       "id": "2013/3",
       "title": "Elementary number theory",
       "canonical_id": "2013/3",
-      "canonical_url": "/problems/2013-3/",
+      "canonical_url": "problems/2013-3/",
       "appearances": [
         "2013/3"
       ],
       "appearance_links": [
         {
           "text": "2013/3",
-          "url": "/problems/2013-3/"
+          "url": "problems/2013-3/"
         }
       ],
       "status": "complete",
@@ -238,14 +238,14 @@
       "id": "2011/3",
       "title": "Elementary number theory",
       "canonical_id": "2011/3",
-      "canonical_url": "/problems/2011-3/",
+      "canonical_url": "problems/2011-3/",
       "appearances": [
         "2011/3"
       ],
       "appearance_links": [
         {
           "text": "2011/3",
-          "url": "/problems/2011-3/"
+          "url": "problems/2011-3/"
         }
       ],
       "status": "draft",
@@ -265,14 +265,14 @@
       "id": "2007/2",
       "title": "Elementary number theory",
       "canonical_id": "2007/2",
-      "canonical_url": "/problems/2007-2/",
+      "canonical_url": "problems/2007-2/",
       "appearances": [
         "2007/2"
       ],
       "appearance_links": [
         {
           "text": "2007/2",
-          "url": "/problems/2007-2/"
+          "url": "problems/2007-2/"
         }
       ],
       "status": "complete",
@@ -292,14 +292,14 @@
       "id": "2004/2",
       "title": "Elementary number theory",
       "canonical_id": "2004/2",
-      "canonical_url": "/problems/2004-2/",
+      "canonical_url": "problems/2004-2/",
       "appearances": [
         "2004/2"
       ],
       "appearance_links": [
         {
           "text": "2004/2",
-          "url": "/problems/2004-2/"
+          "url": "problems/2004-2/"
         }
       ],
       "status": "complete",
@@ -319,14 +319,14 @@
       "id": "2002/3",
       "title": "Carmichael numbers",
       "canonical_id": "2002/3",
-      "canonical_url": "/problems/2002-3/",
+      "canonical_url": "problems/2002-3/",
       "appearances": [
         "2002/3"
       ],
       "appearance_links": [
         {
           "text": "2002/3",
-          "url": "/problems/2002-3/"
+          "url": "problems/2002-3/"
         }
       ],
       "status": "complete",

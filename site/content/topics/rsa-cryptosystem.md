@@ -12,7 +12,7 @@
       "id": "2020/4",
       "title": "Integer factorization",
       "canonical_id": "2020/4",
-      "canonical_url": "/problems/2020-4/",
+      "canonical_url": "problems/2020-4/",
       "appearances": [
         "2020/4",
         "2017/4"
@@ -20,11 +20,11 @@
       "appearance_links": [
         {
           "text": "2020/4",
-          "url": "/problems/2020-4/"
+          "url": "problems/2020-4/"
         },
         {
           "text": "2017/4",
-          "url": "/problems/2017-4/"
+          "url": "problems/2017-4/"
         }
       ],
       "status": "none",
@@ -44,14 +44,14 @@
       "id": "2019/4",
       "title": "Cryptanalysis of RSA",
       "canonical_id": "2019/4",
-      "canonical_url": "/problems/2019-4/",
+      "canonical_url": "problems/2019-4/",
       "appearances": [
         "2019/4"
       ],
       "appearance_links": [
         {
           "text": "2019/4",
-          "url": "/problems/2019-4/"
+          "url": "problems/2019-4/"
         }
       ],
       "status": "none",
@@ -71,14 +71,14 @@
       "id": "2018/5",
       "title": "RSA",
       "canonical_id": "2018/5",
-      "canonical_url": "/problems/2018-5/",
+      "canonical_url": "problems/2018-5/",
       "appearances": [
         "2018/5"
       ],
       "appearance_links": [
         {
           "text": "2018/5",
-          "url": "/problems/2018-5/"
+          "url": "problems/2018-5/"
         }
       ],
       "status": "none",
@@ -98,14 +98,14 @@
       "id": "2016/4",
       "title": "RSA",
       "canonical_id": "2016/4",
-      "canonical_url": "/problems/2016-4/",
+      "canonical_url": "problems/2016-4/",
       "appearances": [
         "2016/4"
       ],
       "appearance_links": [
         {
           "text": "2016/4",
-          "url": "/problems/2016-4/"
+          "url": "problems/2016-4/"
         }
       ],
       "status": "none",
@@ -125,14 +125,14 @@
       "id": "2013/5",
       "title": "RSA",
       "canonical_id": "2013/5",
-      "canonical_url": "/problems/2013-5/",
+      "canonical_url": "problems/2013-5/",
       "appearances": [
         "2013/5"
       ],
       "appearance_links": [
         {
           "text": "2013/5",
-          "url": "/problems/2013-5/"
+          "url": "problems/2013-5/"
         }
       ],
       "status": "none",
@@ -152,14 +152,14 @@
       "id": "2003/3",
       "title": "Partial key-exposure in RSA",
       "canonical_id": "2003/3",
-      "canonical_url": "/problems/2003-3/",
+      "canonical_url": "problems/2003-3/",
       "appearances": [
         "2003/3"
       ],
       "appearance_links": [
         {
           "text": "2003/3",
-          "url": "/problems/2003-3/"
+          "url": "problems/2003-3/"
         }
       ],
       "status": "none",
@@ -179,14 +179,14 @@
       "id": "2002/4",
       "title": "Speeding up RSA decryption",
       "canonical_id": "2002/4",
-      "canonical_url": "/problems/2002-4/",
+      "canonical_url": "problems/2002-4/",
       "appearances": [
         "2002/4"
       ],
       "appearance_links": [
         {
           "text": "2002/4",
-          "url": "/problems/2002-4/"
+          "url": "problems/2002-4/"
         }
       ],
       "status": "none",

@@ -12,14 +12,14 @@
       "id": "2025/2",
       "title": "MAC schemes",
       "canonical_id": "2025/2",
-      "canonical_url": "/problems/2025-2/",
+      "canonical_url": "problems/2025-2/",
       "appearances": [
         "2025/2"
       ],
       "appearance_links": [
         {
           "text": "2025/2",
-          "url": "/problems/2025-2/"
+          "url": "problems/2025-2/"
         }
       ],
       "status": "none",
@@ -39,14 +39,14 @@
       "id": "2020/2",
       "title": "Authenticated encryption",
       "canonical_id": "2020/2",
-      "canonical_url": "/problems/2020-2/",
+      "canonical_url": "problems/2020-2/",
       "appearances": [
         "2020/2"
       ],
       "appearance_links": [
         {
           "text": "2020/2",
-          "url": "/problems/2020-2/"
+          "url": "problems/2020-2/"
         }
       ],
       "status": "none",
@@ -66,7 +66,7 @@
       "id": "composite/key-whitening",
       "title": "Key whitening and DES-X",
       "canonical_id": "composite/key-whitening",
-      "canonical_url": "/problems/composite-key-whitening/",
+      "canonical_url": "problems/composite-key-whitening/",
       "appearances": [
         "2019/3",
         "2017/1"
@@ -74,11 +74,11 @@
       "appearance_links": [
         {
           "text": "2019/3",
-          "url": "/problems/2019-3/"
+          "url": "problems/2019-3/"
         },
         {
           "text": "2017/1",
-          "url": "/problems/2017-1/"
+          "url": "problems/2017-1/"
         }
       ],
       "status": "none",
@@ -98,14 +98,14 @@
       "id": "2018/1",
       "title": "Block ciphers",
       "canonical_id": "2018/1",
-      "canonical_url": "/problems/2018-1/",
+      "canonical_url": "problems/2018-1/",
       "appearances": [
         "2018/1"
       ],
       "appearance_links": [
         {
           "text": "2018/1",
-          "url": "/problems/2018-1/"
+          "url": "problems/2018-1/"
         }
       ],
       "status": "none",
@@ -125,14 +125,14 @@
       "id": "2016/6",
       "title": "Message authentication codes",
       "canonical_id": "2016/6",
-      "canonical_url": "/problems/2016-6/",
+      "canonical_url": "problems/2016-6/",
       "appearances": [
         "2016/6"
       ],
       "appearance_links": [
         {
           "text": "2016/6",
-          "url": "/problems/2016-6/"
+          "url": "problems/2016-6/"
         }
       ],
       "status": "none",
@@ -152,14 +152,14 @@
       "id": "2013/2",
       "title": "Block ciphers",
       "canonical_id": "2013/2",
-      "canonical_url": "/problems/2013-2/",
+      "canonical_url": "problems/2013-2/",
       "appearances": [
         "2013/2"
       ],
       "appearance_links": [
         {
           "text": "2013/2",
-          "url": "/problems/2013-2/"
+          "url": "problems/2013-2/"
         }
       ],
       "status": "none",
@@ -179,14 +179,14 @@
       "id": "2011/2",
       "title": "Block ciphers",
       "canonical_id": "2011/2",
-      "canonical_url": "/problems/2011-2/",
+      "canonical_url": "problems/2011-2/",
       "appearances": [
         "2011/2"
       ],
       "appearance_links": [
         {
           "text": "2011/2",
-          "url": "/problems/2011-2/"
+          "url": "problems/2011-2/"
         }
       ],
       "status": "none",
@@ -206,14 +206,14 @@
       "id": "2011/5",
       "title": "Pseudo-random bit generators",
       "canonical_id": "2011/5",
-      "canonical_url": "/problems/2011-5/",
+      "canonical_url": "problems/2011-5/",
       "appearances": [
         "2011/5"
       ],
       "appearance_links": [
         {
           "text": "2011/5",
-          "url": "/problems/2011-5/"
+          "url": "problems/2011-5/"
         }
       ],
       "status": "none",
@@ -233,14 +233,14 @@
       "id": "2003/1",
       "title": "Chosen-plaintext attack on two-key Triple-DES",
       "canonical_id": "2003/1",
-      "canonical_url": "/problems/2003-1/",
+      "canonical_url": "problems/2003-1/",
       "appearances": [
         "2003/1"
       ],
       "appearance_links": [
         {
           "text": "2003/1",
-          "url": "/problems/2003-1/"
+          "url": "problems/2003-1/"
         }
       ],
       "status": "none",
@@ -260,14 +260,14 @@
       "id": "2002/1",
       "title": "Attempts to strengthen DES against exhaustive key search attacks",
       "canonical_id": "2002/1",
-      "canonical_url": "/problems/2002-1/",
+      "canonical_url": "problems/2002-1/",
       "appearances": [
         "2002/1"
       ],
       "appearance_links": [
         {
           "text": "2002/1",
-          "url": "/problems/2002-1/"
+          "url": "problems/2002-1/"
         }
       ],
       "status": "none",

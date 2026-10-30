@@ -12,7 +12,7 @@
   {{ range .Params.clusters }}
     {{ $p := dict
         "id" .id
-        "url" .canonical_url
+        "url" (.canonical_url | relURL)
         "title" .title
         "topic" $.Params.title
         "topic_slug" $.Params.topic_slug

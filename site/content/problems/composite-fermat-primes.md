@@ -18,22 +18,22 @@
   "variant_solutions": [],
   "is_canonical": true,
   "canonical_id": "composite/fermat-primes",
-  "canonical_url": "/problems/composite-fermat-primes/",
+  "canonical_url": "problems/composite-fermat-primes/",
   "author": "Zeus",
   "cluster_members": [
     {
       "id": "2016/2",
-      "url": "/problems/2016-2/",
+      "url": "problems/2016-2/",
       "is_current": false
     },
     {
       "id": "2003/2",
-      "url": "/problems/2003-2/",
+      "url": "problems/2003-2/",
       "is_current": false
     },
     {
       "id": "composite/fermat-primes",
-      "url": "/problems/composite-fermat-primes/",
+      "url": "problems/composite-fermat-primes/",
       "is_current": true
     }
   ],
@@ -44,15 +44,15 @@
   "appearance_links": [
     {
       "text": "2016/2",
-      "url": "/problems/2016-2/"
+      "url": "problems/2016-2/"
     },
     {
       "text": "2003/2",
-      "url": "/problems/2003-2/"
+      "url": "problems/2003-2/"
     }
   ],
   "source_file": "problems/composite/fermat-primes.tex",
-  "url": "/problems/composite-fermat-primes/",
+  "url": "problems/composite-fermat-primes/",
   "statement_html": "<p>Let <span class=\"math inline\">\\(p = 2^m + 1\\)</span> be a prime, with\n<span class=\"math inline\">\\(m \\geq 1\\)</span>.</p>\n<ol type=\"a\">\n<li><p>Prove that <span class=\"math inline\">\\(m\\)</span> is a power of\n2.</p></li>\n<li><p>Prove that any quadratic nonresidue modulo <span\nclass=\"math inline\">\\(p\\)</span> is a generator of <span\nclass=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>.</p></li>\n<li><p>Prove that 5 is a generator of <span\nclass=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>, except in the case\n<span class=\"math inline\">\\(p = 5\\)</span>.</p></li>\n<li><p>Prove that 7 is a generator of <span\nclass=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>, except in the case\n<span class=\"math inline\">\\(p = 3\\)</span>.</p></li>\n</ol>",
   "solution_html": "<ol type=\"a\">\n<li><p>Assume <span class=\"math inline\">\\(k \\geq 3\\)</span> is odd and\n<span class=\"math inline\">\\(k \\mid m\\)</span>. Using that <span\nclass=\"math inline\">\\(a - b \\mid a^k - b^k\\)</span> for any <span\nclass=\"math inline\">\\(a, b \\in \\mathbb{Z}\\)</span>, substituting <span\nclass=\"math inline\">\\(a = 2^{m/k}\\)</span> and <span\nclass=\"math inline\">\\(b = -1\\)</span> we get <span\nclass=\"math inline\">\\(2^{m/k} + 1 \\mid 2^m - (-1)^k = 2^m + 1\\)</span>.\nSince <span class=\"math inline\">\\(1 &lt; 2^{m/k} + 1 &lt; 2^m +\n1\\)</span>, we conclude that <span class=\"math inline\">\\(2^{m/k} +\n1\\)</span> is a nontrivial divisor of <span\nclass=\"math inline\">\\(p\\)</span>, which is impossible since <span\nclass=\"math inline\">\\(p\\)</span> is prime.</p>\n<p>Therefore, <span class=\"math inline\">\\(m\\)</span> has no odd divisors\ngreater than <span class=\"math inline\">\\(1\\)</span>, which implies that\n<span class=\"math inline\">\\(m\\)</span> is a power of <span\nclass=\"math inline\">\\(2\\)</span>.</p></li>\n<li><p>Let <span class=\"math inline\">\\(g\\)</span> be a primitive root\nmodulo <span class=\"math inline\">\\(p = 2^m + 1\\)</span>. On the one\nhand, the set of quadratic non-residues modulo <span\nclass=\"math inline\">\\(p\\)</span> is <span\nclass=\"math display\">\\[\\overline{\\operatorname{QR}}_p = \\{g^k : k \\text{\nodd}\\}.\\]</span> On the other hand, the set of generators of <span\nclass=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span> is <span\nclass=\"math display\">\\[\\operatorname{Gen}_p = \\{g^k : \\gcd(k, p - 1) =\n1\\}.\\]</span></p>\n<p>Since <span class=\"math inline\">\\(p-1 = 2^m\\)</span>, we have <span\nclass=\"math inline\">\\(\\gcd(k, p - 1) = 1\\)</span> if and only if <span\nclass=\"math inline\">\\(k\\)</span> is odd. Therefore, <span\nclass=\"math inline\">\\(\\overline{\\operatorname{QR}}_p =\n\\operatorname{Gen}_p\\)</span>, which proves that any quadratic\nnonresidue modulo <span class=\"math inline\">\\(p\\)</span> is a generator\nof <span class=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>.</p></li>\n<li><p>By part (a), write <span class=\"math inline\">\\(m = 2^k\\)</span>\nfor some <span class=\"math inline\">\\(k \\geq 0\\)</span>. For <span\nclass=\"math inline\">\\(k = 0\\)</span>, we have <span\nclass=\"math inline\">\\(p = 3\\)</span> and <span class=\"math inline\">\\(5\n\\equiv 2 \\pmod{3}\\)</span> is a generator of <span\nclass=\"math inline\">\\(\\mathbb{F}_3^\\times\\)</span>. For <span\nclass=\"math inline\">\\(k = 1\\)</span>, we have <span\nclass=\"math inline\">\\(p = 5\\)</span>, which is excluded in the\nstatement. Henceforth, assume <span class=\"math inline\">\\(k \\geq\n2\\)</span>.</p>\n<p>Note that <span class=\"math inline\">\\(p = 2^{2^k} + 1 =\n(2^4)^{2^{k-2}} + 1 = 16^{2^{k-2}} + 1 \\equiv 1^{2^{k-2}} + 1 \\equiv 2\n\\pmod{5}\\)</span>. Moreover, the set of quadratic residues modulo <span\nclass=\"math inline\">\\(5\\)</span> is <span class=\"math inline\">\\(\\{1,\n4\\}\\)</span>, and hence the set of quadratic nonresidues modulo <span\nclass=\"math inline\">\\(5\\)</span> is <span class=\"math inline\">\\(\\{2,\n3\\}\\)</span>.</p>\n<p>Therefore, using quadratic reciprocity, since <span\nclass=\"math inline\">\\(5 \\equiv 1 \\pmod{4}\\)</span>, we have <span\nclass=\"math display\">\\[\\left(\\frac{5}{p}\\right) =\n\\left(\\frac{p}{5}\\right) = \\left(\\frac{2}{5}\\right) = -1,\\]</span> which\nshows that <span class=\"math inline\">\\(5\\)</span> is a quadratic\nnonresidue modulo <span class=\"math inline\">\\(p\\)</span>. By part (b),\nwe conclude that <span class=\"math inline\">\\(5\\)</span> is a generator\nof <span class=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>.</p></li>\n<li><p>By part (a), write <span class=\"math inline\">\\(m = 2^k\\)</span>\nfor some <span class=\"math inline\">\\(k \\geq 0\\)</span>. For <span\nclass=\"math inline\">\\(k = 0\\)</span>, we have <span\nclass=\"math inline\">\\(p = 3\\)</span>, which is excluded in the\nstatement. Henceforth, assume <span class=\"math inline\">\\(k \\geq\n1\\)</span>.</p>\n<p>Note that <span class=\"math inline\">\\(2^3 \\equiv 1 \\pmod{7}\\)</span>,\ntherefore powers of <span class=\"math inline\">\\(2\\)</span> modulo <span\nclass=\"math inline\">\\(7\\)</span> are periodic with period <span\nclass=\"math inline\">\\(3\\)</span>. Moreover, the set of quadratic\nresidues modulo <span class=\"math inline\">\\(7\\)</span> is <span\nclass=\"math inline\">\\(\\{1, 2, 4\\}\\)</span>, and hence the set of\nquadratic nonresidues modulo <span class=\"math inline\">\\(7\\)</span> is\n<span class=\"math inline\">\\(\\{3, 5, 6\\}\\)</span>.</p>\n<p>If <span class=\"math inline\">\\(k\\)</span> is even, say <span\nclass=\"math inline\">\\(k = 2\\ell\\)</span>, then <span\nclass=\"math inline\">\\(2^k \\equiv (2^2)^{\\ell} \\equiv 1^\\ell = 1\n\\pmod{3}\\)</span>, and hence <span class=\"math inline\">\\(p = 2^{2^k} + 1\n\\equiv 2^1 + 1 \\equiv 3 \\pmod{7}\\)</span>. If <span\nclass=\"math inline\">\\(k\\)</span> is odd, say <span\nclass=\"math inline\">\\(k = 2\\ell + 1\\)</span>, then <span\nclass=\"math inline\">\\(2^k \\equiv 2^{2\\ell + 1} \\equiv 2 \\cdot (2^2)^\\ell\n\\equiv 2 \\cdot 1^\\ell = 2 \\pmod{3}\\)</span>, and hence <span\nclass=\"math inline\">\\(p = 2^{2^k} + 1 \\equiv 2^2 + 1 \\equiv 5\n\\pmod{7}\\)</span>. Therefore, <span class=\"math inline\">\\(p \\equiv\n3\\)</span> or <span class=\"math inline\">\\(5 \\pmod{7}\\)</span>. In either\ncase, <span class=\"math inline\">\\(p\\)</span> is a quadratic nonresidue\nmodulo <span class=\"math inline\">\\(7\\)</span>.</p>\n<p>By quadratic reciprocity, since <span class=\"math inline\">\\(p \\equiv\n1 \\pmod{4}\\)</span>, <span\nclass=\"math display\">\\[\\left(\\frac{7}{p}\\right) =\n\\left(\\frac{p}{7}\\right) = -1\\]</span> which shows that <span\nclass=\"math inline\">\\(7\\)</span> is a quadratic nonresidue modulo <span\nclass=\"math inline\">\\(p\\)</span>. By part (b), we conclude that <span\nclass=\"math inline\">\\(7\\)</span> is a generator of <span\nclass=\"math inline\">\\(\\mathbb{F}_p^\\times\\)</span>.</p></li>\n</ol>",
   "raw_statement": "Let \\(p = 2^m + 1\\) be a prime, with \\(m \\geq 1\\).\n\n\\begin{enumerate}[label=(\\alph*)]\n    \\item Prove that \\(m\\) is a power of 2.\n\n    \\item Prove that any quadratic nonresidue modulo \\(p\\) is a generator of \\(\\mathbb{F}_p^\\times\\).\n\n    \\item Prove that 5 is a generator of \\(\\mathbb{F}_p^\\times\\), except in the case \\(p = 5\\).\n\n    \\item Prove that 7 is a generator of \\(\\mathbb{F}_p^\\times\\),\n    except in the case \\(p = 3\\).\n\\end{enumerate}",

@@ -12,14 +12,14 @@
       "id": "2020/1",
       "title": "Shannon's theory",
       "canonical_id": "2020/1",
-      "canonical_url": "/problems/2020-1/",
+      "canonical_url": "problems/2020-1/",
       "appearances": [
         "2020/1"
       ],
       "appearance_links": [
         {
           "text": "2020/1",
-          "url": "/problems/2020-1/"
+          "url": "problems/2020-1/"
         }
       ],
       "status": "none",
@@ -39,14 +39,14 @@
       "id": "2019/6",
       "title": "Provable security",
       "canonical_id": "2019/6",
-      "canonical_url": "/problems/2019-6/",
+      "canonical_url": "problems/2019-6/",
       "appearances": [
         "2019/6"
       ],
       "appearance_links": [
         {
           "text": "2019/6",
-          "url": "/problems/2019-6/"
+          "url": "problems/2019-6/"
         }
       ],
       "status": "none",
@@ -66,14 +66,14 @@
       "id": "2016/8",
       "title": "Provable security",
       "canonical_id": "2016/8",
-      "canonical_url": "/problems/2016-8/",
+      "canonical_url": "problems/2016-8/",
       "appearances": [
         "2016/8"
       ],
       "appearance_links": [
         {
           "text": "2016/8",
-          "url": "/problems/2016-8/"
+          "url": "problems/2016-8/"
         }
       ],
       "status": "none",
@@ -93,14 +93,14 @@
       "id": "2013/4",
       "title": "Provable security",
       "canonical_id": "2013/4",
-      "canonical_url": "/problems/2013-4/",
+      "canonical_url": "problems/2013-4/",
       "appearances": [
         "2013/4"
       ],
       "appearance_links": [
         {
           "text": "2013/4",
-          "url": "/problems/2013-4/"
+          "url": "problems/2013-4/"
         }
       ],
       "status": "none",
@@ -120,14 +120,14 @@
       "id": "2011/4",
       "title": "Provable security",
       "canonical_id": "2011/4",
-      "canonical_url": "/problems/2011-4/",
+      "canonical_url": "problems/2011-4/",
       "appearances": [
         "2011/4"
       ],
       "appearance_links": [
         {
           "text": "2011/4",
-          "url": "/problems/2011-4/"
+          "url": "problems/2011-4/"
         }
       ],
       "status": "none",

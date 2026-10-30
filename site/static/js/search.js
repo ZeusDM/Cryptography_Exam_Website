@@ -62,7 +62,7 @@ function performSearch(query) {
 
     return `
       <li class="search-result-item">
-        <a href="${(window.baseURL ? window.baseURL.replace(/\/+$/, "") : "") + item.url}">
+        <a href="${(window.baseURL ? window.baseURL.replace(/\/+$/, "") : "") + ("/" + item.url.replace(/^\/+/, ""))}">
           <div class="search-result-title">
             <span>${item.id}: ${escapeHtml(item.title)}</span>
             ${statusPill}

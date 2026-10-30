@@ -12,7 +12,7 @@
       "id": "composite/elliptic-cubing",
       "title": "Elliptic curves",
       "canonical_id": "composite/elliptic-cubing",
-      "canonical_url": "/problems/composite-elliptic-cubing/",
+      "canonical_url": "problems/composite-elliptic-cubing/",
       "appearances": [
         "2025/6",
         "2018/6",
@@ -22,19 +22,19 @@
       "appearance_links": [
         {
           "text": "2025/6",
-          "url": "/problems/2025-6/"
+          "url": "problems/2025-6/"
         },
         {
           "text": "2018/6",
-          "url": "/problems/2018-6/"
+          "url": "problems/2018-6/"
         },
         {
           "text": "2013/6",
-          "url": "/problems/2013-6/"
+          "url": "problems/2013-6/"
         },
         {
           "text": "2003/6",
-          "url": "/problems/2003-6/"
+          "url": "problems/2003-6/"
         }
       ],
       "status": "none",
@@ -54,7 +54,7 @@
       "id": "composite/elliptic-point-counting",
       "title": "Elliptic curves",
       "canonical_id": "composite/elliptic-point-counting",
-      "canonical_url": "/problems/composite-elliptic-point-counting/",
+      "canonical_url": "problems/composite-elliptic-point-counting/",
       "appearances": [
         "2019/5",
         "2017/7"
@@ -62,11 +62,11 @@
       "appearance_links": [
         {
           "text": "2019/5",
-          "url": "/problems/2019-5/"
+          "url": "problems/2019-5/"
         },
         {
           "text": "2017/7",
-          "url": "/problems/2017-7/"
+          "url": "problems/2017-7/"
         }
       ],
       "status": "none",
@@ -86,14 +86,14 @@
       "id": "2011/6",
       "title": "Elliptic curves",
       "canonical_id": "2011/6",
-      "canonical_url": "/problems/2011-6/",
+      "canonical_url": "problems/2011-6/",
       "appearances": [
         "2011/6"
       ],
       "appearance_links": [
         {
           "text": "2011/6",
-          "url": "/problems/2011-6/"
+          "url": "problems/2011-6/"
         }
       ],
       "status": "none",
@@ -113,14 +113,14 @@
       "id": "2007/5",
       "title": "Weil pairing",
       "canonical_id": "2007/5",
-      "canonical_url": "/problems/2007-5/",
+      "canonical_url": "problems/2007-5/",
       "appearances": [
         "2007/5"
       ],
       "appearance_links": [
         {
           "text": "2007/5",
-          "url": "/problems/2007-5/"
+          "url": "problems/2007-5/"
         }
       ],
       "status": "none",
@@ -140,14 +140,14 @@
       "id": "2007/6",
       "title": "Embedding degree",
       "canonical_id": "2007/6",
-      "canonical_url": "/problems/2007-6/",
+      "canonical_url": "problems/2007-6/",
       "appearances": [
         "2007/6"
       ],
       "appearance_links": [
         {
           "text": "2007/6",
-          "url": "/problems/2007-6/"
+          "url": "problems/2007-6/"
         }
       ],
       "status": "none",
@@ -167,14 +167,14 @@
       "id": "2004/6",
       "title": "Elliptic curves and finite fields",
       "canonical_id": "2004/6",
-      "canonical_url": "/problems/2004-6/",
+      "canonical_url": "problems/2004-6/",
       "appearances": [
         "2004/6"
       ],
       "appearance_links": [
         {
           "text": "2004/6",
-          "url": "/problems/2004-6/"
+          "url": "problems/2004-6/"
         }
       ],
       "status": "none",

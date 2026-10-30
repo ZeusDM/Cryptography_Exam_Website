@@ -252,7 +252,7 @@ def main(cache: dict = None, quiet: bool = False, problems_dir=None):
             meta["problem"] = p_num
             meta["is_custom"] = False
             meta["file"] = pf
-            meta["url"] = f"/problems/{year}-{p_num}/"
+            meta["url"] = f"problems/{year}-{p_num}/"
             years_data[year].append(meta)
             all_problems[p_id] = meta
 
@@ -269,7 +269,7 @@ def main(cache: dict = None, quiet: bool = False, problems_dir=None):
             meta["name"] = name
             meta["is_custom"] = True
             meta["file"] = pf
-            meta["url"] = f"/problems/{dir_name}-{name}/"
+            meta["url"] = f"problems/{dir_name}-{name}/"
             custom_data[dir_name].append(meta)
             all_problems[p_id] = meta
 

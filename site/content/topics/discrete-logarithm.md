@@ -12,14 +12,14 @@
       "id": "2025/5",
       "title": "Discrete logarithms",
       "canonical_id": "2025/5",
-      "canonical_url": "/problems/2025-5/",
+      "canonical_url": "problems/2025-5/",
       "appearances": [
         "2025/5"
       ],
       "appearance_links": [
         {
           "text": "2025/5",
-          "url": "/problems/2025-5/"
+          "url": "problems/2025-5/"
         }
       ],
       "status": "none",
@@ -39,14 +39,14 @@
       "id": "2025/7",
       "title": "Elliptic curve Diffie-Hellman key agreement",
       "canonical_id": "2025/7",
-      "canonical_url": "/problems/2025-7/",
+      "canonical_url": "problems/2025-7/",
       "appearances": [
         "2025/7"
       ],
       "appearance_links": [
         {
           "text": "2025/7",
-          "url": "/problems/2025-7/"
+          "url": "problems/2025-7/"
         }
       ],
       "status": "none",
@@ -66,7 +66,7 @@
       "id": "composite/diffie-hellman-reductions",
       "title": "Discrete logarithm and Diffie-Hellman problems",
       "canonical_id": "composite/diffie-hellman-reductions",
-      "canonical_url": "/problems/composite-diffie-hellman-reductions/",
+      "canonical_url": "problems/composite-diffie-hellman-reductions/",
       "appearances": [
         "2020/5",
         "2017/6"
@@ -74,11 +74,11 @@
       "appearance_links": [
         {
           "text": "2020/5",
-          "url": "/problems/2020-5/"
+          "url": "problems/2020-5/"
         },
         {
           "text": "2017/6",
-          "url": "/problems/2017-6/"
+          "url": "problems/2017-6/"
         }
       ],
       "status": "none",
@@ -98,7 +98,7 @@
       "id": "2016/5",
       "title": "Discrete logarithm problem",
       "canonical_id": "2016/5",
-      "canonical_url": "/problems/2016-5/",
+      "canonical_url": "problems/2016-5/",
       "appearances": [
         "2016/5",
         "2007/3"
@@ -106,11 +106,11 @@
       "appearance_links": [
         {
           "text": "2016/5",
-          "url": "/problems/2016-5/"
+          "url": "problems/2016-5/"
         },
         {
           "text": "2007/3",
-          "url": "/problems/2007-3/"
+          "url": "problems/2007-3/"
         }
       ],
       "status": "none",
@@ -130,7 +130,7 @@
       "id": "2007/4",
       "title": "Security of the basic ElGamal public-key encryption scheme",
       "canonical_id": "2007/4",
-      "canonical_url": "/problems/2007-4/",
+      "canonical_url": "problems/2007-4/",
       "appearances": [
         "2007/4",
         "2003/5"
@@ -138,11 +138,11 @@
       "appearance_links": [
         {
           "text": "2007/4",
-          "url": "/problems/2007-4/"
+          "url": "problems/2007-4/"
         },
         {
           "text": "2003/5",
-          "url": "/problems/2003-5/"
+          "url": "problems/2003-5/"
         }
       ],
       "status": "none",
@@ -162,14 +162,14 @@
       "id": "2004/3",
       "title": "Bit security of the discrete logarithm problem",
       "canonical_id": "2004/3",
-      "canonical_url": "/problems/2004-3/",
+      "canonical_url": "problems/2004-3/",
       "appearances": [
         "2004/3"
       ],
       "appearance_links": [
         {
           "text": "2004/3",
-          "url": "/problems/2004-3/"
+          "url": "problems/2004-3/"
         }
       ],
       "status": "none",
@@ -189,14 +189,14 @@
       "id": "2003/4",
       "title": "Diffie-Hellman problem",
       "canonical_id": "2003/4",
-      "canonical_url": "/problems/2003-4/",
+      "canonical_url": "problems/2003-4/",
       "appearances": [
         "2003/4"
       ],
       "appearance_links": [
         {
           "text": "2003/4",
-          "url": "/problems/2003-4/"
+          "url": "problems/2003-4/"
         }
       ],
       "status": "none",
@@ -216,14 +216,14 @@
       "id": "2002/5",
       "title": "Bit security of the discrete logarithm problem",
       "canonical_id": "2002/5",
-      "canonical_url": "/problems/2002-5/",
+      "canonical_url": "problems/2002-5/",
       "appearances": [
         "2002/5"
       ],
       "appearance_links": [
         {
           "text": "2002/5",
-          "url": "/problems/2002-5/"
+          "url": "problems/2002-5/"
         }
       ],
       "status": "none",

@@ -12,14 +12,14 @@
       "id": "2025/1",
       "title": "Hash functions",
       "canonical_id": "2025/1",
-      "canonical_url": "/problems/2025-1/",
+      "canonical_url": "problems/2025-1/",
       "appearances": [
         "2025/1"
       ],
       "appearance_links": [
         {
           "text": "2025/1",
-          "url": "/problems/2025-1/"
+          "url": "problems/2025-1/"
         }
       ],
       "status": "none",
@@ -39,14 +39,14 @@
       "id": "2020/6",
       "title": "Hash functions",
       "canonical_id": "2020/6",
-      "canonical_url": "/problems/2020-6/",
+      "canonical_url": "problems/2020-6/",
       "appearances": [
         "2020/6"
       ],
       "appearance_links": [
         {
           "text": "2020/6",
-          "url": "/problems/2020-6/"
+          "url": "problems/2020-6/"
         }
       ],
       "status": "none",
@@ -66,14 +66,14 @@
       "id": "2019/2",
       "title": "Hash functions",
       "canonical_id": "2019/2",
-      "canonical_url": "/problems/2019-2/",
+      "canonical_url": "problems/2019-2/",
       "appearances": [
         "2019/2"
       ],
       "appearance_links": [
         {
           "text": "2019/2",
-          "url": "/problems/2019-2/"
+          "url": "problems/2019-2/"
         }
       ],
       "status": "none",
@@ -93,14 +93,14 @@
       "id": "2018/2",
       "title": "Hash functions",
       "canonical_id": "2018/2",
-      "canonical_url": "/problems/2018-2/",
+      "canonical_url": "problems/2018-2/",
       "appearances": [
         "2018/2"
       ],
       "appearance_links": [
         {
           "text": "2018/2",
-          "url": "/problems/2018-2/"
+          "url": "problems/2018-2/"
         }
       ],
       "status": "none",
@@ -120,14 +120,14 @@
       "id": "2017/2",
       "title": "Hash functions",
       "canonical_id": "2017/2",
-      "canonical_url": "/problems/2017-2/",
+      "canonical_url": "problems/2017-2/",
       "appearances": [
         "2017/2"
       ],
       "appearance_links": [
         {
           "text": "2017/2",
-          "url": "/problems/2017-2/"
+          "url": "problems/2017-2/"
         }
       ],
       "status": "none",
@@ -147,14 +147,14 @@
       "id": "2016/1",
       "title": "Hash functions",
       "canonical_id": "2016/1",
-      "canonical_url": "/problems/2016-1/",
+      "canonical_url": "problems/2016-1/",
       "appearances": [
         "2016/1"
       ],
       "appearance_links": [
         {
           "text": "2016/1",
-          "url": "/problems/2016-1/"
+          "url": "problems/2016-1/"
         }
       ],
       "status": "none",
@@ -174,14 +174,14 @@
       "id": "2013/1",
       "title": "Hash functions",
       "canonical_id": "2013/1",
-      "canonical_url": "/problems/2013-1/",
+      "canonical_url": "problems/2013-1/",
       "appearances": [
         "2013/1"
       ],
       "appearance_links": [
         {
           "text": "2013/1",
-          "url": "/problems/2013-1/"
+          "url": "problems/2013-1/"
         }
       ],
       "status": "none",
@@ -201,14 +201,14 @@
       "id": "2011/1",
       "title": "Hash functions",
       "canonical_id": "2011/1",
-      "canonical_url": "/problems/2011-1/",
+      "canonical_url": "problems/2011-1/",
       "appearances": [
         "2011/1"
       ],
       "appearance_links": [
         {
           "text": "2011/1",
-          "url": "/problems/2011-1/"
+          "url": "problems/2011-1/"
         }
       ],
       "status": "none",
@@ -228,14 +228,14 @@
       "id": "2007/1",
       "title": "Hash functions",
       "canonical_id": "2007/1",
-      "canonical_url": "/problems/2007-1/",
+      "canonical_url": "problems/2007-1/",
       "appearances": [
         "2007/1"
       ],
       "appearance_links": [
         {
           "text": "2007/1",
-          "url": "/problems/2007-1/"
+          "url": "problems/2007-1/"
         }
       ],
       "status": "none",
@@ -255,14 +255,14 @@
       "id": "2004/1",
       "title": "Hash functions",
       "canonical_id": "2004/1",
-      "canonical_url": "/problems/2004-1/",
+      "canonical_url": "problems/2004-1/",
       "appearances": [
         "2004/1"
       ],
       "appearance_links": [
         {
           "text": "2004/1",
-          "url": "/problems/2004-1/"
+          "url": "problems/2004-1/"
         }
       ],
       "status": "none",
@@ -282,14 +282,14 @@
       "id": "2002/2",
       "title": "Hash functions",
       "canonical_id": "2002/2",
-      "canonical_url": "/problems/2002-2/",
+      "canonical_url": "problems/2002-2/",
       "appearances": [
         "2002/2"
       ],
       "appearance_links": [
         {
           "text": "2002/2",
-          "url": "/problems/2002-2/"
+          "url": "problems/2002-2/"
         }
       ],
       "status": "none",
