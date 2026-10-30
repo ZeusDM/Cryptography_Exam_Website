@@ -39,7 +39,7 @@
       </span>
       {{- if not $p.is_topic_view -}}
         {{- if $p.topic -}}
-          <a href="/topics/{{ $p.topic_slug }}/" class="badge topic-badge">{{ $p.topic }}</a>
+          <a href="{{ printf "topics/%s/" .topic_slug | relURL }}" class="badge topic-badge">{{ .topic }}</a>
         {{- end -}}
       {{- end -}}
     </div>
@@ -137,7 +137,7 @@
               <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url }}">{{ $v.id }}</a></strong>{{ end }}.</span>
               <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
                 {{ range $p.variant_solutions }}
-                  <a href="{{ .url }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
+                  <a href="{{ .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
                 {{ end }}
               </div>
             </div>
@@ -148,7 +148,7 @@
           <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url }}" style="color:var(--primary); text-decoration:underline;">{{ $v.id }}</a></strong>{{ end }}.</span>
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
             {{ range $p.variant_solutions }}
-              <a href="{{ .url }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
+              <a href="{{ .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
             {{ end }}
           </div>
         </div>

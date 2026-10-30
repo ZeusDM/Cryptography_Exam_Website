@@ -20,7 +20,7 @@
 
   <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
     {{ range hugo.Data.status_matrix.topics }}
-      <a href="/topics/{{ .slug }}/" class="topic-card" style="padding:1.1rem;">
+      <a href="{{ printf "topics/%s/" .slug | relURL }}" class="topic-card" style="padding:1.1rem;">
         <div>
           <div class="card-header-line">
             <span class="card-title" style="font-size:1rem;">{{ .name }}</span>
@@ -57,7 +57,7 @@
 
   <div class="year-boxes-grid">
     {{ range hugo.Data.status_matrix.years }}
-      <a href="/years/{{ .year }}/" class="year-box">{{ .year }}</a>
+      <a href="{{ printf "years/%s/" .year | relURL }}" class="year-box">{{ .year }}</a>
     {{ end }}
   </div>
 </section>

@@ -8,7 +8,7 @@ let searchIndex = null;
 async function loadSearchIndex() {
   if (searchIndex) return searchIndex;
   try {
-    const res = await fetch("/data/search_index.json");
+    const res = await fetch((window.baseURL ? window.baseURL.replace(/\/+$/, "") : "") + "/data/search_index.json");
     searchIndex = await res.json();
     return searchIndex;
   } catch (err) {
@@ -62,7 +62,7 @@ function performSearch(query) {
 
     return `
       <li class="search-result-item">
-        <a href="${item.url}">
+        <a href="${(window.baseURL ? window.baseURL.replace(/\/+$/, "") : "") + item.url}">
           <div class="search-result-title">
             <span>${item.id}: ${escapeHtml(item.title)}</span>
             ${statusPill}

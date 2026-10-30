@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <nav style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">
-  <a href="/">Home</a>
+  <a href="{{"" | relURL}}">Home</a>
   <span>/</span>
   <span style="color:var(--text-heading);">All Problems</span>
 </nav>
@@ -30,9 +30,9 @@
           {{ end }}
         </div>
         <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem;">
-          <a href="/topics/{{ .Params.topic_slug }}/" style="color:var(--primary);">{{ .Params.topic }}</a>
+          <a href="{{ printf "topics/%s/" .Params.topic_slug | relURL }}" style="color:var(--primary);">{{ .Params.topic }}</a>
           {{ if ne .Params.year "Composite" }}
-            • <a href="/years/{{ .Params.year }}/">{{ .Params.year }}</a>
+            • <a href="{{ printf "years/%s/" .Params.year | relURL }}">{{ .Params.year }}</a>
           {{ end }}
         </div>
       </div>

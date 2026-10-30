@@ -20,12 +20,12 @@
         {{ $year := .year }}
         <tr>
           <td class="year-cell">
-            <a href="/years/{{ $year }}/">{{ $year }}</a>
+            <a href="{{ printf "years/%v/" $year | relURL }}">{{ $year }}</a>
           </td>
           {{ range .problems }}
             <td>
               {{ if . }}
-                <a href="{{ .url }}"
+                <a href="{{ .url | relURL }}"
                    class="matrix-cell status-{{ .status }}"
                    data-status="{{ .status }}"
                    data-topic-slug="{{ .topic_slug }}"
@@ -58,7 +58,7 @@
     <div style="font-size:0.75rem; color:var(--text-muted); width:100%; text-align:center; margin-top:0.25rem;">
       {{ range $index, $topic := hugo.Data.status_matrix.topics }}
         {{ if gt $index 0 }} • {{ end }}
-        <a href="/topics/{{ $topic.slug }}/" style="color:var(--text-muted);"><strong>{{ $topic.abbr }}</strong>: {{ $topic.name }}</a>
+        <a href="{{ printf "topics/%v/" $topic.slug | relURL }}" style="color:var(--text-muted);"><strong>{{ $topic.abbr }}</strong>: {{ $topic.name }}</a>
       {{ end }}
     </div>
   </div>
