@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ZeusDM/Cryptography_Exam
+          token: ${{ secrets.MATH_VAULT_TOKEN }}
           path: math_vault
 
       - name: Set up Python
