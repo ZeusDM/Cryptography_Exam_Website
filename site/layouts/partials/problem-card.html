@@ -6,22 +6,6 @@
 <div class="problem-card" id="{{ $p.id }}">
   <div class="problem-header">
     <div class="problem-header-left">
-      {{- if not $isExamMode -}}
-        {{- $statusClass := "status-none" -}}
-        {{- $statusTitle := "No solution" -}}
-        {{- if eq $p.status "complete" -}}
-          {{- $statusClass = "status-complete" -}}
-          {{- if and $p.has_variant_solution (not $p.has_own_solution) -}}
-            {{- $statusTitle = "Solution available (other exam)" -}}
-          {{- else -}}
-            {{- $statusTitle = "Solution available" -}}
-          {{- end -}}
-        {{- else if eq $p.status "draft" -}}
-          {{- $statusClass = "status-draft" -}}
-          {{- $statusTitle = "Draft solution" -}}
-        {{- end -}}
-        <span class="problem-status-dot {{ $statusClass }}" title="{{ $statusTitle }}" aria-label="{{ $statusTitle }}"></span>
-      {{- end -}}
       <span class="problem-title-line">
         {{- if $p.is_topic_view -}}
           <span class="problem-id-tag">
@@ -84,23 +68,62 @@
     </div>
   </div>
 
-  {{ if $p.has_own_solution }}
-    <div class="solution-section">
-      <details class="solution-details" {{ if $openSolution }}open{{ end }}>
-        <summary class="solution-summary">
-          <div class="solution-summary-left">
-            <svg class="solution-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            {{ if eq $p.status "draft" }}
-              <span style="color:var(--badge-orange-text);">Draft Solution</span>
-            {{ else }}
-              <span>Solution</span>
+  {{ if not $isSingleView }}
+    {{/* List view: render a clean, color-coded solution action button or empty indicator */}}
+    <div class="problem-list-action-bar">
+      {{ if eq $p.status "draft" }}
+        <a href="{{ $p.url | relURL }}" class="btn-problem-solution btn-solution-draft">
+          <span>View Draft Solution</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      {{ else if or $p.has_own_solution (eq $p.status "complete") }}
+        <a href="{{ $p.url | relURL }}" class="btn-problem-solution btn-solution-complete">
+          <span>View Solution</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      {{ else if $p.has_variant_solution }}
+        <a href="{{ $p.url | relURL }}" class="btn-problem-solution btn-solution-variant">
+          <span>View Solution (other exam)</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      {{ else }}
+        <span class="pill-no-solution">No solution yet</span>
+      {{ end }}
+    </div>
+  {{ else }}
+    {{/* Single Problem view: render the dedicated tinted proof block */}}
+    {{ if $p.has_own_solution }}
+      <div class="solution-block-container" id="solution">
+        <div class="solution-header-bar">
+          <div class="solution-header-title">
+            <span class="solution-indicator-dot {{ if eq $p.status "draft" }}status-draft{{ else }}status-complete{{ end }}"></span>
+            <h3>{{ if eq $p.status "draft" }}Draft Solution{{ else }}Solution{{ end }}</h3>
+          </div>
+          <div class="solution-header-actions">
+            <button class="btn btn-sm btn-icon" onclick="copyProblemLatex(this, true)" title="Copy solution LaTeX" aria-label="Copy solution LaTeX">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+            {{ if $p.source_file }}
+              <a href="https://github.com/ZeusDM/Cryptography_Exam/blob/main/{{ $p.source_file }}"
+                 class="btn btn-sm btn-icon" target="_blank" rel="noopener" title="View LaTeX source on GitHub" aria-label="View source on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
             {{ end }}
           </div>
-        </summary>
+        </div>
 
-        <div class="solution-content">
+        <div class="solution-content-body">
           <div class="problem-solution-html">
             {{ $p.solution_html | safeHTML }}
           </div>
@@ -112,54 +135,41 @@
             {{ end }}
             {{ if $p.source_file }}
               <a href="https://github.com/ZeusDM/Cryptography_Exam/blob/main/{{ $p.source_file }}" target="_blank" rel="noopener">LaTeX Source &rarr;</a>
-              <span class="footnote-sep">&bull;</span>
-            {{ end }}
-            <button type="button" class="footnote-btn" onclick="copyProblemLatex(this, true)" title="Copy solution LaTeX">Copy LaTeX</button>
-          </div>
-        </div>
-      </details>
-    </div>
-  {{ else if $p.has_variant_solution }}
-    <div class="solution-section">
-      {{ if $isExamMode }}
-        <details class="solution-details">
-          <summary class="solution-summary">
-            <div class="solution-summary-left">
-              <svg class="solution-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-              <span>Solution</span>
-              <span class="badge status-variant" style="font-size:0.72rem; padding:0.1rem 0.4rem;">Solution in other exam</span>
-            </div>
-          </summary>
-          <div class="solution-content">
-            <div class="solution-empty-prompt">
-              <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url | relURL }}">{{ $v.id }}</a></strong>{{ end }}.</span>
-              <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
-                {{ range $p.variant_solutions }}
-                  <a href="{{ printf "%s" .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </details>
-      {{ else }}
-        <div class="solution-empty-prompt">
-          <span>No direct solution written for this problem. A solution is available under {{ range $idx, $v := $p.variant_solutions }}{{ if gt $idx 0 }}, {{ end }}<strong><a href="{{ $v.url | relURL }}" style="color:var(--primary); text-decoration:underline;">{{ $v.id }}</a></strong>{{ end }}.</span>
-          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
-            {{ range $p.variant_solutions }}
-              <a href="{{ printf "%s" .url | relURL }}" class="btn btn-sm btn-primary">View Solution ({{ .id }}) &rarr;</a>
             {{ end }}
           </div>
         </div>
-      {{ end }}
-    </div>
-  {{ else if $isSingleView }}
-    <div class="solution-section">
-      <div class="solution-empty-prompt">
-        <span>No official solution has been written yet for this problem.</span>
       </div>
-    </div>
+    {{ else if $p.has_variant_solution }}
+      <div class="solution-block-container" id="solution">
+        <div class="solution-header-bar">
+          <div class="solution-header-title">
+            <span class="solution-indicator-dot status-draft"></span>
+            <h3>Solution Available in Variant Exam</h3>
+          </div>
+        </div>
+        <div class="solution-content-body">
+          <p style="margin-bottom:1rem; color:var(--text-muted); font-style:italic;">
+            No direct solution text is recorded for this exam instance. An identical or equivalent problem has a solution under:
+          </p>
+          <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+            {{ range $p.variant_solutions }}
+              <a href="{{ .url | relURL }}" class="btn-problem-solution btn-solution-complete">
+                <span>View Solution ({{ .id }})</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ else }}
+      <div class="solution-block-container solution-block-empty" id="solution">
+        <div class="solution-empty-notice">
+          <p>No official solution has been written yet for this problem.</p>
+        </div>
+      </div>
+    {{ end }}
   {{ end }}
 
   <div class="problem-raw-statement mathjax_ignore" style="display:none;">{{ $p.raw_statement }}</div>

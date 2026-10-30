@@ -7,14 +7,11 @@
   </div>
 </section>
 
-<!-- Solution Status Overview Matrix -->
-{{ partial "status-matrix.html" . }}
-
 <!-- Practice by Topic -->
-<section class="homepage-section" id="topics" style="margin-top:2.5rem;">
+<section class="homepage-section" id="topics" style="margin-top:1.5rem;">
   <div class="section-header" style="margin-bottom:0.75rem;">
     <div>
-      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Practice by Topic</h2>
+      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Browse by Topic</h2>
     </div>
   </div>
 
@@ -51,7 +48,7 @@
 <section class="homepage-section" id="years" style="margin-top:2.5rem;">
   <div class="section-header" style="margin-bottom:0.75rem;">
     <div>
-      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Mock Exam by Year</h2>
+      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Browse by Year</h2>
     </div>
   </div>
 
@@ -61,5 +58,8 @@
     {{ end }}
   </div>
 </section>
+
+<!-- Solution Status Overview Matrix (End of Homepage) -->
+{{ partial "status-matrix.html" . }}
 
 {{ end }}

@@ -47,6 +47,10 @@
   --badge-gray-text: #6b645b;
   --badge-gray-border: #dad3c5;
 
+  /* Dedicated Proof / Solution environment tone */
+  --surface-solution: #f3ede2;      /* Distinct subtle warm tint contrasting with paper */
+  --surface-solution-border: #88292f; /* Academic crimson theorem bar */
+
   /* Zero gummy cards / flat geometry */
   --radius-sm: 2px;
   --radius-md: 2px;
@@ -95,6 +99,10 @@
   --badge-gray-bg: rgba(255, 255, 255, 0.05);
   --badge-gray-text: #969186;
   --badge-gray-border: rgba(255, 255, 255, 0.1);
+
+  /* Dedicated Proof / Solution environment tone (dark) */
+  --surface-solution: #1c1f26;      /* Slightly lifted chalkboard slate */
+  --surface-solution-border: #d9777f; /* Warm rose chalk accent */
 
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
@@ -188,7 +196,7 @@ code, pre {
 
 /* Layout Container */
 .container {
-  max-width: 1080px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 1.5rem;
   width: 100%;
@@ -630,7 +638,7 @@ code, pre {
 .topic-problems-list,
 .year-problems-list,
 .problem-single-wrap {
-  max-width: 860px;
+  width: 100%;
 }
 .problem-single-wrap .problem-card {
   border-bottom: none;
@@ -942,6 +950,212 @@ mjx-container[jax="CHTML"][display="true"] {
 /* ==========================================================================
    Solution Presentation (LaTeX Proof Layout - Zero Boxes)
    ========================================================================== */
+
+/* ==========================================================================
+   Problem List View: Slick Solution Buttons & Indicators
+   ========================================================================== */
+
+.problem-list-action-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border);
+}
+
+.btn-problem-solution {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.42rem 0.85rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.btn-problem-solution svg {
+  transition: transform 0.15s ease;
+}
+
+.btn-problem-solution:hover svg {
+  transform: translateX(3px);
+}
+
+.btn-solution-complete {
+  background: var(--badge-green-bg);
+  color: var(--badge-green-text);
+  border: 1px solid var(--badge-green-border);
+}
+.btn-solution-complete:hover {
+  filter: brightness(0.96);
+  border-color: var(--badge-green-text);
+}
+
+.btn-solution-draft {
+  background: var(--badge-orange-bg);
+  color: var(--badge-orange-text);
+  border: 1px solid var(--badge-orange-border);
+}
+.btn-solution-draft:hover {
+  filter: brightness(0.96);
+  border-color: var(--badge-orange-text);
+}
+
+.btn-solution-variant {
+  background: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+  border: 1px solid var(--badge-blue-border);
+}
+.btn-solution-variant:hover {
+  filter: brightness(0.96);
+  border-color: var(--badge-blue-text);
+}
+
+.pill-no-solution {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--badge-red-text);
+  padding: 0.38rem 0.75rem;
+  background: var(--badge-red-bg);
+  border: 1px solid var(--badge-red-border);
+  border-radius: var(--radius-sm);
+  user-select: none;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   Single Problem View: Dedicated Tinted Proof Environment
+   ========================================================================== */
+
+.solution-block-container {
+  margin-top: 2rem;
+  background-color: var(--surface-solution);
+  border-left: 3px solid var(--surface-solution-border);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+  transition: background-color 0.15s ease;
+}
+
+.solution-block-empty {
+  border-left-color: var(--border-strong);
+  background: transparent;
+}
+.solution-empty-notice {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.solution-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.solution-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.solution-header-title h3 {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 0;
+}
+
+.solution-indicator-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.solution-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.solution-header-actions .btn-icon {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.12s ease;
+}
+.solution-header-actions .btn-icon:hover {
+  color: var(--text-heading);
+}
+
+.solution-content-body {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* ==========================================================================
+   Topic Page Filter Controls
+   ========================================================================== */
+
+.topic-filter-group {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+
+.topic-filter-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.topic-filter-btn:hover {
+  color: var(--text-heading);
+}
+
+.topic-filter-btn.active {
+  background: var(--surface);
+  color: var(--text-heading);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .topic-filter-btn.active {
+  background: #252a33;
+  color: #ffffff;
+}
 
 .solution-section {
   margin-top: 1.5rem;

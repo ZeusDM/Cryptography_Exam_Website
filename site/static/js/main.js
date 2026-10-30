@@ -127,6 +127,47 @@ function initMatrixFilters() {
   }
 }
 
+// Topic Page Filter (All vs Unsolved)
+function initTopicFilters() {
+  const filterGroup = document.getElementById("topic-filter-controls");
+  if (!filterGroup) return;
+
+  const buttons = filterGroup.querySelectorAll(".topic-filter-btn");
+  const wrappers = document.querySelectorAll(".topic-problem-wrapper");
+  const noResults = document.getElementById("no-filter-results");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+      let visibleCount = 0;
+
+      wrappers.forEach((wrapper) => {
+        const isCompleted = wrapper.getAttribute("data-is-completed") === "true";
+        if (filter === "unsolved") {
+          // Unsolved includes problems with no solution and problems with draft solutions
+          if (!isCompleted) {
+            wrapper.style.display = "";
+            visibleCount++;
+          } else {
+            wrapper.style.display = "none";
+          }
+        } else {
+          wrapper.style.display = "";
+          visibleCount++;
+        }
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? "block" : "none";
+      }
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initMatrixFilters();
+  initTopicFilters();
 });

@@ -1,10 +1,20 @@
 {{ define "main" }}
 
-<div class="section-header" style="margin-bottom:1.5rem;">
+<div class="section-header" style="margin-bottom:1.5rem; align-items:center;">
   <div>
     <h1 style="font-size:2rem; font-weight:800; color:var(--text-heading); margin-bottom:0.4rem;">
       {{ .Params.title }}
     </h1>
+  </div>
+
+  <!-- Topic Problem Filter -->
+  <div class="topic-filter-group" id="topic-filter-controls">
+    <button type="button" class="topic-filter-btn active" data-filter="all">
+      All Problems
+    </button>
+    <button type="button" class="topic-filter-btn" data-filter="unsolved">
+      Unsolved Only
+    </button>
   </div>
 </div>
 
@@ -38,8 +48,14 @@
         "has_variant_solution" .has_variant_solution
         "variant_solutions" .variant_solutions
     }}
-    {{ partial "problem-card.html" $p }}
+    <div class="topic-problem-wrapper" data-status="{{ .status }}" data-is-completed="{{ eq .status "complete" }}">
+      {{ partial "problem-card.html" $p }}
+    </div>
   {{ end }}
+</div>
+
+<div id="no-filter-results" style="display:none; padding:2rem 0; text-align:center; color:var(--text-muted); font-style:italic;">
+  No problems match the current filter.
 </div>
 
 {{ end }}
