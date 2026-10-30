@@ -1,0 +1,13 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+title = "UW Cryptography Comprehensive Exam"
+
+[params]
+  description = "Problems and solutions from the University of Waterloo Cryptography Comprehensive Exam (2002–2025)"
+  repo_url = "https://github.com/ZeusDM/Cryptography_Exam"
+  syllabus_url = "https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/documents/crypto_syllabus-november-2020.pdf"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

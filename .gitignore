@@ -1,0 +1,12 @@
+# Hugo build output
+site/public/
+site/resources/
+site/.cache/
+site/.hugo_build.lock
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Local checkouts if any
+math_vault/

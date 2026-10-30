@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="section-header">
+  <h1 style="font-size:2rem; font-weight:800; color:var(--text-heading); margin-bottom:1rem;">{{ .Title }}</h1>
+</div>
+
+<div class="cards-grid">
+  {{ range .Pages }}
+    <div class="topic-card">
+      <a href="{{ .RelPermalink }}" style="font-weight:700; font-size:1.1rem; color:var(--text-heading);">
+        {{ .Title }}
+      </a>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

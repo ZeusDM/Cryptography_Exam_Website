@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div class="section-header" style="margin-bottom:1.5rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; color:var(--text-heading); margin-bottom:0.4rem;">
+      {{ .Params.title }}
+    </h1>
+  </div>
+</div>
+
+<div class="topic-problems-list">
+  {{ range .Params.clusters }}
+    {{ $p := dict
+        "id" .id
+        "url" .canonical_url
+        "title" .title
+        "topic" $.Params.title
+        "topic_slug" $.Params.topic_slug
+        "year" ""
+        "problem" ""
+        "status" .status
+        "is_canonical" true
+        "canonical_id" .canonical_id
+        "canonical_url" .canonical_url
+        "appearances" .appearances
+        "appearance_links" .appearance_links
+        "author" .author
+        "source_file" .source_file
+        "statement_html" .statement_html
+        "solution_html" .solution_html
+        "raw_statement" .raw_statement
+        "raw_solution" .raw_solution
+        "is_exam_mode" false
+        "open_solution" false
+        "is_single_view" false
+        "is_topic_view" true
+        "has_own_solution" .has_own_solution
+        "has_variant_solution" .has_variant_solution
+        "variant_solutions" .variant_solutions
+    }}
+    {{ partial "problem-card.html" $p }}
+  {{ end }}
+</div>
+
+{{ end }}

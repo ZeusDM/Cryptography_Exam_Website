@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<section class="dashboard-hero">
+  <div class="dashboard-hero-main">
+    <h1 class="dashboard-title">University of Waterloo Cryptography Comprehensive Exam</h1>
+    <p class="dashboard-subtitle">Archive of past examination problems &amp; solutions &bull; Department of Combinatorics &amp; Optimization</p>
+  </div>
+</section>
+
+<!-- Solution Status Overview Matrix -->
+{{ partial "status-matrix.html" . }}
+
+<!-- Practice by Topic -->
+<section class="homepage-section" id="topics" style="margin-top:2.5rem;">
+  <div class="section-header" style="margin-bottom:0.75rem;">
+    <div>
+      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Practice by Topic</h2>
+    </div>
+  </div>
+
+  <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+    {{ range hugo.Data.status_matrix.topics }}
+      <a href="/topics/{{ .slug }}/" class="topic-card" style="padding:1.1rem;">
+        <div>
+          <div class="card-header-line">
+            <span class="card-title" style="font-size:1rem;">{{ .name }}</span>
+          </div>
+          <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">
+            <span>{{ .cluster_count }} problems</span>
+            {{ if gt .solved_count 0 }}
+              • <strong style="color:var(--badge-green-text);">{{ .solved_count }} solved</strong>
+            {{ end }}
+          </div>
+        </div>
+
+        <div>
+          {{ $pct := 0 }}
+          {{ if gt .cluster_count 0 }}
+            {{ $pct = div (mul .solved_count 100) .cluster_count }}
+          {{ end }}
+          <div class="progress-bar-container" title="{{ $pct }}% solved">
+            <div class="progress-bar-fill" style="width: {{ $pct }}%;"></div>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Mock Exam by Year -->
+<section class="homepage-section" id="years" style="margin-top:2.5rem;">
+  <div class="section-header" style="margin-bottom:0.75rem;">
+    <div>
+      <h2 style="font-size:1.35rem; font-weight:700; color:var(--text-heading); margin:0;">Mock Exam by Year</h2>
+    </div>
+  </div>
+
+  <div class="year-boxes-grid">
+    {{ range hugo.Data.status_matrix.years }}
+      <a href="/years/{{ .year }}/" class="year-box">{{ .year }}</a>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

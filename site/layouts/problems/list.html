@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<nav style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">
+  <a href="/">Home</a>
+  <span>/</span>
+  <span style="color:var(--text-heading);">All Problems</span>
+</nav>
+
+<div class="section-header">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; color:var(--text-heading); margin-bottom:0.4rem;">All Problems</h1>
+    <p style="color:var(--text-muted);">Complete catalog of all problems from the Waterloo Cryptography Comprehensive Exam.</p>
+  </div>
+</div>
+
+<div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+  {{ range .Site.RegularPages }}
+    {{ if eq .Type "problem" }}
+      <div class="year-card" style="padding:1rem;">
+        <div class="card-header-line">
+          <a href="{{ .RelPermalink }}" style="font-weight:700; color:var(--text-heading);">
+            {{ .Params.problem_id }}: {{ .Title }}
+          </a>
+          {{ if eq .Params.status "complete" }}
+            <span class="badge status-complete">Solved</span>
+          {{ else if eq .Params.status "draft" }}
+            <span class="badge status-draft">Draft</span>
+          {{ else }}
+            <span class="badge status-none">No solution</span>
+          {{ end }}
+        </div>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem;">
+          <a href="/topics/{{ .Params.topic_slug }}/" style="color:var(--primary);">{{ .Params.topic }}</a>
+          {{ if ne .Params.year "Composite" }}
+            • <a href="/years/{{ .Params.year }}/">{{ .Params.year }}</a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{ end }}

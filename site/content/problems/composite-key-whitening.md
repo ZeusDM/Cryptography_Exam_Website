@@ -1,0 +1,61 @@
+---
+{
+  "title": "Key whitening and DES-X",
+  "slug": "composite-key-whitening",
+  "id": "composite/key-whitening",
+  "problem_id": "composite/key-whitening",
+  "year": "Composite",
+  "problem": 0,
+  "problem_number": 0,
+  "topic": "Symmetric-Key Cryptography",
+  "topic_slug": "symmetric-key-cryptography",
+  "status": "none",
+  "is_incomplete": false,
+  "is_reference": false,
+  "has_own_solution": false,
+  "has_solution": false,
+  "has_variant_solution": false,
+  "variant_solutions": [],
+  "is_canonical": true,
+  "canonical_id": "composite/key-whitening",
+  "canonical_url": "/problems/composite-key-whitening/",
+  "author": "",
+  "cluster_members": [
+    {
+      "id": "2019/3",
+      "url": "/problems/2019-3/",
+      "is_current": false
+    },
+    {
+      "id": "2017/1",
+      "url": "/problems/2017-1/",
+      "is_current": false
+    },
+    {
+      "id": "composite/key-whitening",
+      "url": "/problems/composite-key-whitening/",
+      "is_current": true
+    }
+  ],
+  "appearances": [
+    "2019/3",
+    "2017/1"
+  ],
+  "appearance_links": [
+    {
+      "text": "2019/3",
+      "url": "/problems/2019-3/"
+    },
+    {
+      "text": "2017/1",
+      "url": "/problems/2017-1/"
+    }
+  ],
+  "source_file": "problems/composite/key-whitening.tex",
+  "url": "/problems/composite-key-whitening/",
+  "statement_html": "<p>The original DES block cipher is limited to a 56-bit key and 64-bit\nplaintext/ciphertext blocks. The DES-X block cipher, proposed by Ron\nRivest, uses a 184-bit key <span class=\"math inline\">\\((k, k_1,\nk_2)\\)</span> where <span class=\"math inline\">\\(k \\in\n\\{0,1\\}^{56}\\)</span> and <span class=\"math inline\">\\(k_1, k_2 \\in\n\\{0,1\\}^{64}\\)</span>. The encryption of a plaintext <span\nclass=\"math inline\">\\(m \\in \\{0,1\\}^{64}\\)</span> is given by <span\nclass=\"math display\">\\[E(m) = \\mathrm{DES}_{k}(m \\oplus k_1) \\oplus\nk_2,\\]</span> where <span\nclass=\"math inline\">\\(\\mathrm{DES}_{k}(m)\\)</span> denotes the\nDES-encryption of a 64-bit plaintext block <span\nclass=\"math inline\">\\(m\\)</span> with 56-bit secret key <span\nclass=\"math inline\">\\(k\\)</span>.</p>\n<ol type=\"a\">\n<li><p>Describe the decryption procedure.</p></li>\n<li><p>Suppose that the XOR with <span\nclass=\"math inline\">\\(k_1\\)</span> is omitted, i.e., <span\nclass=\"math display\">\\[E(m) = \\mathrm{DES}_{k}(m) \\oplus k_2,\\]</span>\nwhere the key <span class=\"math inline\">\\((k, k_2)\\)</span> is now 120\nbits. Describe an attack that recovers the secret key using roughly\n<span class=\"math inline\">\\(2^{56}\\)</span> DES operations.</p></li>\n<li><p>Suppose that the XOR with <span\nclass=\"math inline\">\\(k_2\\)</span> is omitted, i.e., <span\nclass=\"math display\">\\[E(m) = \\mathrm{DES}_{k}(m \\oplus k_1),\\]</span>\nwhere the key <span class=\"math inline\">\\((k, k_1)\\)</span> is now 120\nbits. Describe an attack that recovers the secret key using roughly\n<span class=\"math inline\">\\(2^{56}\\)</span> DES operations.</p></li>\n</ol>",
+  "solution_html": "",
+  "raw_statement": "The original DES block cipher is limited to a 56-bit key and 64-bit plaintext/ciphertext blocks. The DES-X block cipher, proposed by Ron Rivest, uses a 184-bit key \\((k, k_1, k_2)\\) where \\(k \\in \\{0,1\\}^{56}\\) and \\(k_1, k_2 \\in \\{0,1\\}^{64}\\). The encryption of a plaintext \\(m \\in \\{0,1\\}^{64}\\) is given by\n\\[\nE(m) = \\mathrm{DES}_{k}(m \\oplus k_1) \\oplus k_2,\n\\]\nwhere \\(\\mathrm{DES}_{k}(m)\\) denotes the DES-encryption of a 64-bit plaintext block \\(m\\) with 56-bit secret key \\(k\\).\n\n\\begin{enumerate}[label=(\\alph*)]\n    \\item Describe the decryption procedure.\n\n    \\item Suppose that the XOR with \\(k_1\\) is omitted, i.e.,\n    \\[\n    E(m) = \\mathrm{DES}_{k}(m) \\oplus k_2,\n    \\]\n    where the key \\((k, k_2)\\) is now 120 bits. Describe an attack that recovers the secret key using roughly \\(2^{56}\\) DES operations.\n\n    \\item Suppose that the XOR with \\(k_2\\) is omitted, i.e.,\n    \\[\n    E(m) = \\mathrm{DES}_{k}(m \\oplus k_1),\n    \\]\n    where the key \\((k, k_1)\\) is now 120 bits. Describe an attack that recovers the secret key using roughly \\(2^{56}\\) DES operations.\n\\end{enumerate}",
+  "raw_solution": ""
+}
+---

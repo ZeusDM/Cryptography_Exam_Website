@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<div class="section-header" style="margin-bottom:1.5rem; align-items:baseline;">
+  <h1 style="font-size:2rem; font-weight:800; color:var(--text-heading); margin:0;">
+    {{ .Params.year }} Cryptography Comprehensive Exam
+    {{ if .Params.official_pdf }}
+      <a href="{{ .Params.official_pdf }}" target="_blank" rel="noopener" style="font-size:0.95rem; font-weight:500; font-family:var(--font-sans); color:var(--text-muted); margin-left:0.75rem; vertical-align:middle; text-decoration:none;">Original PDF &rarr;</a>
+    {{ end }}
+  </h1>
+</div>
+
+<div class="year-problems-list">
+  {{ range .Params.problems }}
+    {{ $p := dict
+        "id" .id
+        "url" (printf "/problems/%s/" .slug)
+        "title" .title
+        "topic" .topic
+        "topic_slug" .topic_slug
+        "year" $.Params.year
+        "problem" .problem
+        "status" .status
+        "is_canonical" .is_canonical
+        "canonical_id" .canonical_id
+        "canonical_url" .canonical_url
+        "appearances" .appearances
+        "appearance_links" .appearance_links
+        "author" .author
+        "source_file" .source_file
+        "statement_html" .statement_html
+        "solution_html" .solution_html
+        "raw_statement" .raw_statement
+        "raw_solution" .raw_solution
+        "is_exam_mode" true
+        "open_solution" false
+        "has_own_solution" .has_own_solution
+        "has_variant_solution" .has_variant_solution
+        "variant_solutions" .variant_solutions
+    }}
+    {{ partial "problem-card.html" $p }}
+  {{ end }}
+</div>
+
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<nav style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">
+  <a href="/">Home</a>
+  <span>/</span>
+  {{ if ne .Params.year "Composite" }}
+    <a href="/years/{{ .Params.year }}/">{{ .Params.year }} Exam</a>
+  {{ else }}
+    <span>Composite Problems</span>
+  {{ end }}
+  <span>/</span>
+  <span style="color:var(--text-heading);">Problem {{ .Params.problem }}</span>
+</nav>
+
+<div class="problem-single-wrap">
+  {{ $p := merge .Params (dict "is_exam_mode" false "open_solution" true "is_single_view" true) }}
+  {{ partial "problem-card.html" $p }}
+
+  <div style="display:flex; justify-content:space-between; margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--border);">
+    <a href="/topics/{{ .Params.topic_slug }}/" class="btn btn-sm">&larr; Back to {{ .Params.topic }}</a>
+    {{ if ne .Params.year "Composite" }}
+      <a href="/years/{{ .Params.year }}/" class="btn btn-sm">View Full {{ .Params.year }} Exam &rarr;</a>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,65 @@
+<div class="matrix-wrapper" id="matrix">
+  <div class="section-header" style="margin-bottom:0.75rem;">
+    <div>
+      <h3 style="font-size:1.25rem; font-weight:700; color:var(--text-heading); margin:0;">Solution Status Overview</h3>
+    </div>
+  </div>
+
+  <table class="status-matrix">
+    <thead>
+      <tr>
+        <th class="year-col">Year</th>
+        {{ $max := hugo.Data.status_matrix.max_problems }}
+        {{ range seq 1 $max }}
+          <th>{{ . }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range hugo.Data.status_matrix.years }}
+        {{ $year := .year }}
+        <tr>
+          <td class="year-cell">
+            <a href="/years/{{ $year }}/">{{ $year }}</a>
+          </td>
+          {{ range .problems }}
+            <td>
+              {{ if . }}
+                <a href="{{ .url }}"
+                   class="matrix-cell status-{{ .status }}"
+                   data-status="{{ .status }}"
+                   data-topic-slug="{{ .topic_slug }}"
+                   title="{{ .problem }}/{{ $year }}: {{ .title }} ({{ .topic }}){{ if .is_reference }} • Solution in other exam{{ end }}">
+                  {{ .topic_abbr }}
+                </a>
+              {{ else }}
+                <span class="cell-empty">—</span>
+              {{ end }}
+            </td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <div class="matrix-legend">
+    <div class="legend-item">
+      <span class="legend-dot status-complete"></span>
+      <span>Solution</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot status-draft"></span>
+      <span>Draft</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot status-none"></span>
+      <span>No solution</span>
+    </div>
+    <div style="font-size:0.75rem; color:var(--text-muted); width:100%; text-align:center; margin-top:0.25rem;">
+      {{ range $index, $topic := hugo.Data.status_matrix.topics }}
+        {{ if gt $index 0 }} • {{ end }}
+        <a href="/topics/{{ $topic.slug }}/" style="color:var(--text-muted);"><strong>{{ $topic.abbr }}</strong>: {{ $topic.name }}</a>
+      {{ end }}
+    </div>
+  </div>
+</div>

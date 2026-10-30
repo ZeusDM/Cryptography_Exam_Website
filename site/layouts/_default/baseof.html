@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Instant Theme Initializer (prevents white flash on dark theme load) -->
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (t === "dark" || (!t && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- MathJax Configuration & Script -->
+  {{ partial "mathjax.html" . }}
+</head>
+<body>
+
+  {{ partial "header.html" . }}
+
+  <main style="flex:1; padding: 2rem 0;">
+    <div class="container">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <!-- Instant Search Modal -->
+  <div id="search-modal" class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search problems">
+    <div class="search-dialog">
+      <div class="search-input-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-modal-input" class="search-input" placeholder="Search problems, topics, years (e.g. 'RSA', 'hash', '2025/1')..." autocomplete="off">
+        <button onclick="closeSearch()" class="btn btn-sm" aria-label="Close search">ESC</button>
+      </div>
+      <ul id="search-modal-results" class="search-results">
+        <li style="padding:1.5rem; text-align:center; color:var(--text-muted); font-size:0.9rem;">
+          Type to search problems, topics, years, or mathematical terms...
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/search.js"></script>
+</body>
+</html>
